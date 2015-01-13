@@ -7,22 +7,10 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ppmetr2 for more book information.
 #---
-
-# Money was written by Tobias Luetke. Install it with gem install money.
-# https://github.com/tobi
-# 
-require "money"
-
-bargain_price = Money.from_numeric(99, "USD")
-bargain_price.format # => "$99.00"
+String.class_eval do |klass|
+  klass # => String
+end
 
 require_relative '../test/assertions'
-assert_equals "$99.00", bargain_price.format
-
-require "money"
-
-standard_price = 100.to_money("USD")
-standard_price.format # => "$100.00"
-
-assert_equals "$100.00", standard_price.format
+assert_equals String, String.class_eval {|klass| klass }
 ```
