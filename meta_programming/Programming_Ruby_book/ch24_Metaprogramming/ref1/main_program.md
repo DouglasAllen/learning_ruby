@@ -7,6 +7,7 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ruby4 for more book information.
 #---
+
 require_relative 'vanity_refinement'
 
 puts "About to require file using refinement"
@@ -14,4 +15,5 @@ require_relative 'file_using_refinement'
 puts "Back from require"
 
 shout("finished")
+
 ```

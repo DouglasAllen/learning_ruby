@@ -7,6 +7,7 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ppmetr2 for more book information.
 #---
+
 class MyClass
   def my_method; 'my_method()'; end
 end

@@ -18,10 +18,20 @@ class MyClass
   def my_method
     @var = @var + 1
   end
+
+  def my_other_method
+    @var = @var + 1
+    self
+  end
 end
 
 obj = MyClass.new
-obj.testing_self                     # => #<MyClass:0x007f93ab08a728 @var=11>
-obj.testing_self.instance_variables  # => [:@var]
-obj.my_method.instance_variables     # => []
+obj.instance_variables                  # => [:@var]
+ 
+obj.testing_self                        # => #<MyClass:0x007f93ab08a728 @var=11>
+obj.testing_self.instance_variables     # => [:@var]
+
+obj.my_method.instance_variables        # => []
+obj.my_other_method.instance_variables  # => [:@var]
+
 ```

@@ -3,7 +3,7 @@
   
 class S  
   def m  
-    puts "Class #{self.class} method #{eval(self.to_s)}:"   
+    puts "Class #{self.class} method #{self.methods.first}:"   
   end  
 end
   

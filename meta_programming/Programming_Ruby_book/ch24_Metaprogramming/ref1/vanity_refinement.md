@@ -7,6 +7,7 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ruby4 for more book information.
 #---
+
 module VanityPuts
   refine Object do
     private
@@ -17,4 +18,5 @@ module VanityPuts
     end
   end
 end
+
 ```

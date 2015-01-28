@@ -7,7 +7,9 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ruby4 for more book information.
 #---
+
 class Turtle
+
   # directions: 0 = E, 1 = S, 2 = W, 3 = N
   # axis: 0 = x, 1 = y
   def initialize
@@ -69,19 +71,23 @@ class Turtle
   def mark_current_location
     @board[[@x,@y]] = "#" if @pen_down
   end
+
 end
 
 turtle = Turtle.new
+
 turtle.walk do
-  3.times do
-    forward(8)
+  #3.times do
+    forward(10)
     pen_down
     4.times do
-      forward(4)
-      left
+      forward(15)
+      right
     end
     pen_up
-  end
+  #end
 end
+
 turtle.draw
+
 ```

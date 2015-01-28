@@ -7,7 +7,9 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ruby4 for more book information.
 #---
+
 module TraceCalls
+
   def self.included(klass)
     klass.instance_methods(false).each do |existing_method|
       wrap(klass, existing_method)
@@ -20,6 +22,7 @@ module TraceCalls
       end
     end
   end
+
   def self.wrap(klass, method)
     klass.instance_eval do
       method_object = instance_method(method)
@@ -32,5 +35,7 @@ module TraceCalls
       end
     end
   end
+
 end
+
 ```

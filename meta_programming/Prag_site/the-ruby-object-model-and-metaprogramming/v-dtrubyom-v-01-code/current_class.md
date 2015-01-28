@@ -1,7 +1,7 @@
 ```ruby
 class Dave
-   def meth
-   end
+  def meth
+  end
 end
 
 class Fred

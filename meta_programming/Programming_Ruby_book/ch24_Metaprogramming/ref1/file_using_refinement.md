@@ -7,6 +7,7 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/ruby4 for more book information.
 #---
+
 using VanityPuts
 
 puts "I'm in #{File::basename(__FILE__)}"
@@ -14,4 +15,5 @@ puts "I'm in #{File::basename(__FILE__)}"
 def shout(msg)
   puts(msg.upcase)
 end
+
 ```
