@@ -5,7 +5,7 @@ http://www.jasimabasheer.com/posts/meta_introduction_to_ruby.html
 
 http://rubykoans.com/windows
 
-
+https://rubymonk.com/
 
 === Meta Programming
 
@@ -101,3 +101,7 @@ RubyGems was originally developed at RubyConf 2003 by:
 * Dave Glasser -- glasser(at)mit.edu
 * Paul Duncan -- pabs(at)pablotron.org
 * Ville Aine -- vaine(at)cs.helsinki.fi
+
+https://www.youtube.com/watch?v=by5fFOBhtPQ&list=PLKQgz_fcEwoevsuQ5vAqCnDlhsC8BO8JF
+
+https://www.youtube.com/watch?v=io34q2G4eOU&list=PLDOo4JBO2P5_Tjug8Yl7PANb0sZtO7R_D&index=2&hd=1

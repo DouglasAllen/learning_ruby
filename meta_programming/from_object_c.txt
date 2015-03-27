@@ -1,0 +1,152 @@
+/*
+ *  Document-class: Class
+ *
+ *  Classes in Ruby are first-class objects---each is an instance of
+ *  class <code>Class</code>.
+ *
+ *  Typically, you create a new class by using:
+ *
+ *    class Name
+ *     # some code describing the class behavior
+ *    end
+ *
+ *  When a new class is created, an object of type Class is initialized and
+ *  assigned to a global constant (<code>Name</code> in this case).
+ *
+ *  When <code>Name.new</code> is called to create a new object, the
+ *  <code>new</code> method in <code>Class</code> is run by default.
+ *  This can be demonstrated by overriding <code>new</code> in
+ *  <code>Class</code>:
+ *
+ *     class Class
+ *       alias old_new new
+ *       def new(*args)
+ *         print "Creating a new ", self.name, "\n"
+ *         old_new(*args)
+ *       end
+ *     end
+ *
+ *     class Name
+ *     end
+ *
+ *     n = Name.new
+ *
+ *  <em>produces:</em>
+ *
+ *     Creating a new Name
+ *
+ *  Classes, modules, and objects are interrelated. In the diagram
+ *  that follows, the vertical arrows represent inheritance, and the
+ *  parentheses metaclasses. All metaclasses are instances
+ *  of the class `Class'.
+ *                             +---------+             +-...
+ *                             |         |             |
+ *             BasicObject-----|-->(BasicObject)-------|-...
+ *                 ^           |         ^             |
+ *                 |           |         |             |
+ *              Object---------|----->(Object)---------|-...
+ *                 ^           |         ^             |
+ *                 |           |         |             |
+ *                 +-------+   |         +--------+    |
+ *                 |       |   |         |        |    |
+ *                 |    Module-|---------|--->(Module)-|-...
+ *                 |       ^   |         |        ^    |
+ *                 |       |   |         |        |    |
+ *                 |     Class-|---------|---->(Class)-|-...
+ *                 |       ^   |         |        ^    |
+ *                 |       +---+         |        +----+
+ *                 |                     |
+ *    obj--->OtherClass---------->(OtherClass)-----------...
+ *
+ */
+
+
+/*!
+ * Initializes the world of objects and classes.
+ *
+ * At first, the function bootstraps the class hierarchy.
+ * It initializes the most fundamental classes and their metaclasses.
+ * - \c BasicObject
+ * - \c Object
+ * - \c Module
+ * - \c Class
+ * After the bootstrap step, the class hierarchy becomes as the following
+ * diagram.
+ *
+ * \image html boottime-classes.png
+ *
+ * Then, the function defines classes, modules and methods as usual.
+ * \ingroup class
+ */
+
+/*  Document-class: BasicObject
+ *
+ *  BasicObject is the parent class of all classes in Ruby.  It's an explicit
+ *  blank class.
+ *
+ *  BasicObject can be used for creating object hierarchies independent of
+ *  Ruby's object hierarchy, proxy objects like the Delegator class, or other
+ *  uses where namespace pollution from Ruby's methods and classes must be
+ *  avoided.
+ *
+ *  To avoid polluting BasicObject for other users an appropriately named
+ *  subclass of BasicObject should be created instead of directly modifying
+ *  BasicObject:
+ *
+ *    class MyObjectSystem < BasicObject
+ *    end
+ *
+ *  BasicObject does not include Kernel (for methods like +puts+) and
+ *  BasicObject is outside of the namespace of the standard library so common
+ *  classes will not be found without using a full class path.
+ *
+ *  A variety of strategies can be used to provide useful portions of the
+ *  standard library to subclasses of BasicObject.  A subclass could
+ *  <code>include Kernel</code> to obtain +puts+, +exit+, etc.  A custom
+ *  Kernel-like module could be created and included or delegation can be used
+ *  via #method_missing:
+ *
+ *    class MyObjectSystem < BasicObject
+ *      DELEGATE = [:puts, :p]
+ *
+ *      def method_missing(name, *args, &block)
+ *        super unless DELEGATE.include? name
+ *        ::Kernel.send(name, *args, &block)
+ *      end
+ *
+ *      def respond_to_missing?(name, include_private = false)
+ *        DELEGATE.include?(name) or super
+ *      end
+ *    end
+ *
+ *  Access to classes and modules from the Ruby standard library can be
+ *  obtained in a BasicObject subclass by referencing the desired constant
+ *  from the root like <code>::File</code> or <code>::Enumerator</code>.
+ *  Like #method_missing, #const_missing can be used to delegate constant
+ *  lookup to +Object+:
+ *
+ *    class MyObjectSystem < BasicObject
+ *      def self.const_missing(name)
+ *        ::Object.const_get(name)
+ *      end
+ *    end
+ */
+
+/*  Document-class: Object
+ *
+ *  Object is the default root of all Ruby objects.  Object inherits from
+ *  BasicObject which allows creating alternate object hierarchies.  Methods
+ *  on Object are available to all classes unless explicitly overridden.
+ *
+ *  Object mixes in the Kernel module, making the built-in kernel functions
+ *  globally accessible.  Although the instance methods of Object are defined
+ *  by the Kernel module, we have chosen to document them here for clarity.
+ *
+ *  When referencing constants in classes inheriting from Object you do not
+ *  need to use the full namespace.  For example, referencing +File+ inside
+ *  +YourClass+ will find the top-level File class.
+ *
+ *  In the descriptions of Object's methods, the parameter <i>symbol</i> refers
+ *  to a symbol, which is either a quoted string or a Symbol (such as
+ *  <code>:name</code>).
+ */

@@ -6,9 +6,15 @@
 class Object
 
   # The hidden singleton lurks behind everyone
-  def metaclass; class << self; self; end; end
+  def metaclass
+    class << self
+      self
+    end
+  end
   
-  def meta_eval &blk; metaclass.instance_eval &blk; end
+  def meta_eval &blk
+    metaclass.instance_eval &blk
+  end
   
   # Adds methods to a metaclass
   def meta_def name, &blk

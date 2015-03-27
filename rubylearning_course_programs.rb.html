@@ -1,0 +1,2669 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+      <!--<link rel="stylesheet" type="text/css" href="stylesheets/default.css">-->
+      <!--<!--<link href="stylesheets/d.css" rel="stylesheet" type="text/css" />-->
+      <!--<link href="stylesheets/fixes.css" rel="stylesheet" type="text/css" />-->
+      <!--<link href="stylesheets/main.css" rel="stylesheet" type="text/css" />-->
+      <!--<link href="stylesheets/reset.css" rel="stylesheet" type="text/css" />-->
+      <!--<link href="stylesheets/print.css" rel="stylesheet" type="text/css" />-->
+      <!--<link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />-->
+      <!--<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />-->
+
+     <style>
+/* Site */
+body {
+      font-family: Verdana, Lucida Grande, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: white;
+      padding: 30px;
+      color: #333;
+      border: 1px solid #aaa;
+      max-width: 900px;
+      margin: 20px auto;	
+      background: #fff url(/images/topbluefade.gif) repeat-x center top;	
+}
+
+    body > *:first-child {
+      margin-top: 0 !important;
+    }
+
+    body > *:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    a {
+      color: #4183C4;
+      text-decoration: none;
+    }
+
+    a.absent {
+      color: #cc0000;
+    }
+
+    a.anchor {
+      display: block;
+      padding-left: 30px;
+      margin-left: -30px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 20px 0 10px;
+      padding: 0;
+      font-weight: bold;
+      -webkit-font-smoothing: antialiased;
+      cursor: text;
+      position: relative;
+    }
+
+    h2:first-child, h1:first-child, h1:first-child + h2, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+      text-decoration: none;
+    }
+
+    h1 tt, h1 code {
+      font-size: inherit;
+    }
+
+    h2 tt, h2 code {
+      font-size: inherit;
+    }
+
+    h3 tt, h3 code {
+      font-size: inherit;
+    }
+
+    h4 tt, h4 code {
+      font-size: inherit;
+    }
+
+    h5 tt, h5 code {
+      font-size: inherit;
+    }
+
+    h6 tt, h6 code {
+      font-size: inherit;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: black;
+    }
+
+    h2 {
+      font-size: 24px;
+      border-bottom: 1px solid #cccccc;
+      color: black;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 14px;
+    }
+
+    h6 {
+      color: #777777;
+      font-size: 14px;
+    }
+
+    p, blockquote, ul, ol, dl, li, table, pre {
+      margin: 3px 0;
+    }
+
+    hr {
+      background: transparent url("http://tinyurl.com/bq5kskr") repeat-x 0 0;
+      border: 0 none;
+      color: #cccccc;
+      height: 4px;
+      padding: 0;
+    }
+
+    body > h2:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    body > h1:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    body > h1:first-child + h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+      margin-top: 0;
+    }
+
+    li p.first {
+      display: inline-block;
+    }
+
+    ul, ol {
+      padding-left: 30px;
+    }
+
+    ul :first-child, ol :first-child {
+      margin-top: 0;
+    }
+
+    ul :last-child, ol :last-child {
+      margin-bottom: 0;
+    }
+
+    dl {
+      padding: 0;
+    }
+
+    dl dt {
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic;
+      padding: 0;
+      margin: 15px 0 5px;
+    }
+
+    dl dt:first-child {
+      padding: 0;
+    }
+
+    dl dt > :first-child {
+      margin-top: 0;
+    }
+
+    dl dt > :last-child {
+      margin-bottom: 0;
+    }
+
+    dl dd {
+      margin: 0 0 15px;
+      padding: 0 15px;
+    }
+
+    dl dd > :first-child {
+      margin-top: 0;
+    }
+
+    dl dd > :last-child {
+      margin-bottom: 0;
+    }
+
+    blockquote {
+      border-left: 4px solid #dddddd;
+      padding: 0 15px;
+      color: #777777;
+    }
+
+    blockquote > :first-child {
+      margin-top: 0;
+    }
+
+    blockquote > :last-child {
+      margin-bottom: 0;
+    }
+
+    table {
+      padding: 0;
+    }
+    table tr {
+      border-top: 1px solid #cccccc;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8;
+    }
+
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px;
+    }
+
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px;
+    }
+
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0;
+    }
+
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    span.frame {
+      display: block;
+      overflow: hidden;
+    }
+
+    span.frame > span {
+      border: 1px solid #dddddd;
+      display: block;
+      float: left;
+      overflow: hidden;
+      margin: 13px 0 0;
+      padding: 7px;
+      width: auto;
+    }
+
+    span.frame span img {
+      display: block;
+      float: left;
+    }
+
+    span.frame span span {
+      clear: both;
+      color: #333333;
+      display: block;
+      padding: 5px 0 0;
+    }
+
+    span.align-center {
+      display: block;
+      overflow: hidden;
+      clear: both;
+    }
+
+    span.align-center > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px auto 0;
+      text-align: center;
+    }
+
+    span.align-center span img {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    span.align-right {
+      display: block;
+      overflow: hidden;
+      clear: both;
+    }
+
+    span.align-right > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px 0 0;
+      text-align: right;
+    }
+
+    span.align-right span img {
+      margin: 0;
+      text-align: right;
+    }
+
+    span.float-left {
+      display: block;
+      margin-right: 13px;
+      overflow: hidden;
+      float: left;
+    }
+
+    span.float-left span {
+      margin: 13px 0 0;
+    }
+
+    span.float-right {
+      display: block;
+      margin-left: 13px;
+      overflow: hidden;
+      float: right;
+    }
+
+    span.float-right > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px auto 0;
+      text-align: right;
+    }
+
+    code, tt {
+      font-family: "Lucida Console", "Courier New", courier;
+      font-size: 12px;
+      margin: 0 2px;
+      padding: 3px 5px;
+      white-space: nowrap;
+      border: 1px solid #eaeaea;
+      background-color: #f8f8f8;
+      border-radius: 3px;
+    }
+
+    pre code {
+      margin: 0;
+      padding: 0;
+      white-space: pre;
+      border: none;
+      background: transparent;
+    }
+
+    .highlight pre {
+      background-color: #f8f8f8;
+      border: 1px solid #cccccc;
+      font-size: 13px;
+      line-height: 19px;
+      overflow: auto;
+      padding: 6px 10px;
+      border-radius: 3px;
+    }
+
+    pre {
+      background-color: #f8f8f8;
+      border: 1px solid #cccccc;
+      font-size: 13px;
+      line-height: 19px;
+      overflow: auto;
+      padding: 6px 10px;
+      border-radius: 3px;
+    }
+
+    pre code, pre tt {
+      background-color: transparent;
+      border: none;
+    }
+
+    span.line-numbers {
+      margin-right: 10px;
+    }
+
+    img.logo {
+      display: block;
+      margin: 10px auto;
+    }
+
+    h1.logo {
+      text-align: center;
+      font-size: 40px;
+    }
+a img {
+	border: none;
+}
+a.nohover {
+	background-color: transparent !important;
+}
+a.align-right {
+	float: right;
+	margin: 0px 0px 0px 10px;
+}
+a.align-right img {
+	display: block;
+}
+a.align-center {
+	display: inline-block;
+	margin: 0px 5px;
+}
+a.align-center img {
+	display: block;
+}
+img.bordered {
+	background-color: #fff;
+	border: 1px solid #CCC;
+	padding: 1px;
+}
+img.align-right {
+	float: right;
+	margin: 0px 0px 0px 10px;
+}
+span.highlight {
+	background-color: #ffc;
+}
+div.section {
+	margin: 0px auto;
+	overflow: hidden;
+	width: 700px;
+}
+div.section h2 {
+	color: #000;
+	float: left;
+	font-family: Georgia;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 120%;
+	margin: 0px 0px 20px 0px;
+	text-align: right;
+	width: 200px;
+}
+div.section h3 {
+	color: #900;
+	font-family: Georgia;
+	font-size: 18px;
+	margin: 0px 0px 0px 250px;
+	line-height: 140%;
+}
+div.section h3.pull-left {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 120%;
+	color: #900;
+	float: left;
+	margin: 0px 0px 10px 0px;
+	width: 200px;
+	text-align: right;
+}
+div.section p {
+	font-family: Georgia;
+	font-size: 18px;
+	line-height: 140%;
+	margin: 0px 0px 25px 250px;
+	width: 450px;
+}
+div.section h2.small {
+	font-size: 20px;
+}
+div.section p.small {
+	font-size: 14px;
+}
+div.section blockquote {
+	margin: 0px 0px 25px 250px;
+	width: 450px;
+}
+div.section blockquote p {
+	font-family: Courier New, Courier, mono;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 140%;
+	margin: 0px 25px;
+	width: auto;
+}
+div.section p.more {
+	font-size: 12px;
+	text-align: center;
+}
+div.section p.centered {
+	text-align: center;
+}
+div.section p.download,
+div.section p.credit {
+	font-size: 14px;
+}
+div.section p.footnote,
+div.section p.sponsorship {
+	font-size: 12px;
+}
+div.section img.biopic {
+	background-color: #fff;
+	border: 2px solid #ccc;
+	padding: 2px;
+	float: left;
+	margin: 0px 0px 10px 40px;
+}
+div.section a.screencast {
+	background-color: transparent !important;
+	float: left;
+	clear: left;
+	margin: 0px 0px 25px 25px;
+}
+div.section a.screencast img {
+	display: block;
+	background-color: #fff;
+	border: 2px solid #ccc;
+	padding: 2px;
+}
+div.section ul.grid {
+	list-style: none;
+	margin: 0px 0px 15px 280px;
+	padding: 0px;
+	overflow: hidden;
+	width: 420px;
+}
+div.section ul.grid li {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	height: 160px;
+	width: 200px;
+}
+div.section ul.grid li a {
+	background-color: transparent !important;
+	display: block;
+	margin: 0px 0px 5px 0px;
+}
+div.section ul.grid li img {
+	display: block;
+	border: 1px solid #ccc;
+	padding: 1px;
+}
+div.section ul.grid li p {
+	font-size: 10px;
+	font-family: inherit;
+	margin: 0px;
+	width: auto;
+}
+div.section ul.grid li p a {
+	display: inline;
+}
+div.section ul.grid li p a:hover {
+	background-color: #f4dda6 !important;
+}
+div.section div.video {
+	margin: 0px 0px 25px 250px;
+	width: 450px;
+}
+div.section ul.links {
+	list-style: none;
+	float: left;
+	clear: left;
+	text-align: right;
+	width: 200px;
+	padding: 0px;
+	margin: 0px 0px 20px 0px;
+	font-family: Georgia;
+	font-size: 14px;
+	line-height: 140%;
+	overflow: hidden;
+}
+div.section ul.links li {
+	float: right;
+	clear: right;
+}
+div.section ul.links li.rss {
+	background: url(/images/rss.png) no-repeat 0px 1px;
+	padding: 0px 0px 0px 22px;
+}
+div.section code {
+	font-family: Courier New, Courier, mono;
+	font-size: 16px;
+	font-weight: bold;
+}
+#navigation {
+	width: 726px;
+	margin: 15px auto 10px;
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center;
+}
+#navigation a {
+	color: #000;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: underline;
+}
+#navigation a:hover {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+#article {
+	padding: 0px 0px 20px 0px;
+}
+#article header {
+	background: url(/images/rails.png) no-repeat left top;
+	margin: 50px auto 32px;
+	width: 606px;
+	padding-left: 100px;
+	text-align: center;
+}
+#article header h1 {
+	margin: 0 auto 12px;
+  font-family: "expressway",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+	font-size: 38px;
+  line-height: 30px;
+  color: #000000;
+}
+#article header h2 {
+	margin: 0 auto;
+  font-family: "expressway",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+	font-size: 21px;
+	line-height: 24px;
+	color: #999999;
+}
+#article p a,
+#article ol a,
+#article ul a {
+	color: #369;
+}
+#article p a:hover,
+#article ol a:hover,
+#article ul a:hover {
+	background-color: #f4dda6;
+	text-decoration: none;
+}
+#article hr.rule {
+	border: 0px;
+	color: #bbb;
+	background-color: #bbb;
+	height: 1px;
+	width: 670px;
+	margin: 0px auto 25px;
+}
+#article p.missing {
+	color: #000;
+	font-family: Georgia;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 120%;
+	margin: 0px auto;
+	text-align: center;
+	width: 700px;
+}
+#footer {
+	color: #666;
+	font-size: 11px;
+	margin: 0px auto;
+	padding: 0px 0px 44px 0px;
+	text-align: center;
+	width: 726px;
+}
+#footer p {
+	margin: 12px 0px;
+}
+#footer p a {
+	color: #000;
+}
+#footer p a:hover {
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+}
+#sponsored_by {
+	margin: 17px 0px !important;
+}
+#sponsored_by a:hover {
+	background-color: transparent !important;
+}
+#sponsored_by a img {
+	vertical-align: -7px;
+}
+
+/* Overview */
+#announce {
+	background-color: #981a21;
+	color: #fff;
+	font-size: 11px;
+	line-height: 13px;
+	margin: 0px;
+	padding: 5px 0px;
+	text-align: center;
+}
+#announce a {
+	color: #fff !important;
+	text-decoration: underline;
+}
+#announce a:hover {
+	background-color: #000 !important;
+	text-decoration: none;
+}
+#slivers {
+	background: url(/images/herobackground.gif) repeat-x left top;
+	border-top: 2px solid #F6E69F;
+	border-bottom: 2px solid #F6E69F;
+	padding: 10px;
+}
+#slivers ul {
+	list-style: none;
+	margin: 0px auto;
+	padding: 0px;
+	overflow: hidden;
+	width: 792px;
+}
+#slivers ul li {
+	float: left;
+	margin: 0px 24px;
+	width: 150px;
+}
+#slivers ul li h2 {
+	color: #0e3062;
+	font-family: Georgia;
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: normal;
+	margin: 0px 0px 10px 0px;
+	text-align: center;
+}
+#slivers ul li img {
+	display: block;
+	margin: 0px auto 5px;
+}
+#slivers ul li p {
+	margin: 0px;
+	text-align: center;
+}
+#slivers ul li p a {
+	color: #000;
+	font-size: 10px;
+}
+#slivers ul li p a:hover {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+#slideshow {
+	font-family: Georgia;
+	font-size: 16px;
+	height: 132px;
+	line-height: 140%;
+	margin: 0px auto 30px;
+	text-align: center;
+	width: 700px;
+	padding: 30px 0px 0px 0px;
+	position: relative;
+}
+#slideshow blockquote {
+	margin: 0px;
+	position: absolute;
+	width: 700px;
+}
+#slideshow blockquote p {
+	margin: 0px;
+}
+#slideshow blockquote p cite {
+	font-size: 14px;
+	color: #464242;
+}
+#slideshow p.more {
+	font-size: 14px;
+	font-style: italic;
+	margin: 0px;
+	position: absolute;
+	bottom: 0px;
+	width: 700px;
+}
+#slideshow p.more a {
+	color: #464242;
+}
+#slideshow p.more a:hover {
+	background-color: #000;
+	text-decoration: none;
+}
+#used_by ul {
+	list-style: none;
+	margin: 0px 0px 0px 280px;
+	padding: 0px;
+	overflow: hidden;
+}
+#used_by ul li {
+	float: left;
+	margin: 0px 0px 20px 0px;
+	width: 209px;
+}
+#used_by ul li img {
+	display: block;
+	margin: 0px 0px 5px 0px;
+}
+#used_by ul li p {
+	font-size: 10px;
+	font-family: inherit;
+	margin: 0px;
+	width: auto;
+}
+/* Applications */
+#applications {
+	list-style: none;
+	margin: 0px auto;
+	padding: 0px 0px 0px 110px;
+	overflow: hidden;
+	width: 700px;
+}
+#applications li {
+	float: left;
+	width: 200px;
+	margin: 0px 0px 20px 0px;
+}
+#applications li a {
+	display: block;
+	margin: 0px 0px 5px 0px;
+	background-color: transparent !important;
+}
+#applications li a img {
+	background-color: #fff;
+	border: 1px solid #CCC;
+	padding: 1px;
+	display: block;
+}
+#applications li p {
+	font-size: 10px;
+	margin: 0px;
+}
+#applications li p a {
+	display: inline;
+}
+#applications li p a:hover {
+	background-color: #f4dda6 !important;
+}
+/* Quotes */
+#article.quotes blockquote {
+	font-family: Georgia;
+	font-size: 18px;
+	line-height: 140%;
+	margin: 0px auto 25px;
+	text-align: center;
+	width: 700px;
+	padding: 0px;
+	position: relative;
+}
+#article.quotes blockquote p {
+	margin: 0px;
+}
+#article.quotes blockquote p cite {
+	font-size: 14px;
+	color: #a69e8a;
+}
+/* Security Policy */
+#article.security {
+	margin: 50px auto 30px;
+	width: 700px;
+}
+#article.security h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 40px 0px 15px 0px;
+}
+#article.security h3 {
+	color: #900;
+	font-family: Georgia;
+	font-size: 18px;
+	margin: 0;
+	line-height: 140%;
+}
+#article.security p,
+#article.security ol {
+	font-family: Georgia;
+	font-size: 18px;
+	line-height: 140%;
+	margin: 0px 0px 25px 0px;
+}
+#article.security ol li {
+	margin: 0px 0px 10px 0px;
+}
+
+     </style>
+  </head>
+  <body>
+    <div id="containter">          
+      <div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#777"># p001hello.rb</span>
+<span style="color:#777">=begin
+  Ruby is an interpreted language
+  Source file has .rb extension
+  Free format and case sensitive
+  No statement delimiters
+  Two types of comments
+  String literals in single or double quotes
+=end</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello</span><span style="color:#710">'</span></span>
+
+<span style="color:#777"># p002rubynumbers.rb</span>
+<span style="color:#777">=begin
+ Ruby Numbers
+ Usual operators:
+ + addition
+ - subtraction
+ * multiplication
+ / division
+=end</span>
+
+puts <span style="color:#00D">1</span> + <span style="color:#00D">2</span>
+puts <span style="color:#00D">2</span> * <span style="color:#00D">3</span>
+<span style="color:#777"># Integer division</span>
+<span style="color:#777"># When you do arithmetic with integers, you'll get integer answers</span>
+puts <span style="color:#00D">3</span> / <span style="color:#00D">2</span>
+puts <span style="color:#00D">10</span> - <span style="color:#00D">11</span>
+puts <span style="color:#60E">1.5</span> / <span style="color:#60E">2.6</span>
+<span style="color:#777"># class hierarchy</span>
+<span style="color:#777"># http://www.cs.mun.ca/~donald/slug/2003-10-16/presentation/img5.html</span>
+
+<span style="color:#777"># p003rubystrings.rb</span>
+<span style="color:#777">=begin
+  Ruby Strings
+  In Ruby, strings are mutable
+=end</span>
+
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Hello World</span><span style="color:#710">&quot;</span></span>
+<span style="color:#777"># Can use &quot; or ' for Strings, but ' is more efficient</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello World</span><span style="color:#710">'</span></span>
+<span style="color:#777"># String concatenation</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I like</span><span style="color:#710">'</span></span> + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> Ruby</span><span style="color:#710">'</span></span>
+<span style="color:#777"># Escape sequence</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">It</span><span style="color:#b0b">\'</span><span style="color:#D20">s my Ruby</span><span style="color:#710">'</span></span>
+<span style="color:#777"># New here, displays the string three times</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello</span><span style="color:#710">'</span></span> * <span style="color:#00D">3</span>
+<span style="color:#777"># Defining a constant</span>
+<span style="color:#777"># More on Constants later, here</span>
+<span style="color:#777"># http://rubylearning.com/satishtalim/ruby_names.html</span>
+<span style="color:#036;font-weight:bold">PI</span> = <span style="color:#60E">3.1416</span>
+puts <span style="color:#036;font-weight:bold">PI</span>
+
+<span style="color:#777"># p004stringusage.rb</span>
+<span style="color:#777"># Defining a constant</span>
+<span style="color:#036;font-weight:bold">PI</span> = <span style="color:#60E">3.1416</span>
+puts <span style="color:#036;font-weight:bold">PI</span>
+<span style="color:#777"># Defining a local variable</span>
+my_string = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I love my city, Pune</span><span style="color:#710">'</span></span>
+puts my_string
+<span style="color:#777">=begin
+  Conversions
+  .to_i, .to_f, .to_s
+=end</span>
+var1 = <span style="color:#00D">5</span>;
+var2 = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">2</span><span style="color:#710">'</span></span>
+puts var1 + var2.to_i
+<span style="color:#777"># &lt;&lt; appending to a string</span>
+a = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">hello </span><span style="color:#710">'</span></span>
+a&lt;&lt;<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">world.
+I love this world...</span><span style="color:#710">'</span></span>
+puts a
+
+<span style="color:#777">=begin
+  &lt;&lt; marks the start of the string literal and
+  is followed by a delimiter of your choice.
+  The string literal then starts from the next
+  new line and finishes when the delimiter is
+  repeated again on a line on its own.
+=end</span>
+a = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&lt;&lt;END_STR</span></span><span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">
+This is the string
+And a second line</span><span style="color:#710">
+END_STR</span></span>
+puts a
+
+<span style="color:#777"># p005methods.rb</span>
+<span style="color:#777"># gets and chomp</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">In which city do you stay?</span><span style="color:#710">&quot;</span></span>
+<span style="color:#777"># STDOUT - global constant - the actual standard output stream for the program</span>
+<span style="color:#777"># flush - flushes any buffered data within io to the underlying operating system</span>
+<span style="color:#069">STDOUT</span>.flush
+<span style="color:#777"># gets - returns a string and a '\n' character</span>
+<span style="color:#777"># chomp - removes this '\n'</span>
+city = gets.chomp
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The city is </span><span style="color:#710">&quot;</span></span> + city
+
+<span style="color:#777"># to know which object you are in</span>
+puts <span style="color:#069">self</span>
+
+<span style="color:#777"># p006ftoc.rb</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Enter temperature in Fahrenheit: </span><span style="color:#710">'</span></span>
+<span style="color:#069">STDOUT</span>.flush
+temp_in_fahrenheit = gets.chomp
+temp_in_celsius = (((temp_in_fahrenheit.to_f - <span style="color:#60E">32.0</span>) / <span style="color:#60E">9.0</span>) * <span style="color:#60E">5.0</span>)
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Temperature </span><span style="color:#710">'</span></span> + temp_in_fahrenheit + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> degree Fahrenheit = </span><span style="color:#710">'</span></span> + format(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">%.2f</span><span style="color:#710">&quot;</span></span>, temp_in_celsius) + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> degree Celsius</span><span style="color:#710">'</span></span>
+
+<span style="color:#777"># p007dt.rb</span>
+<span style="color:#777">=begin
+  The first character of a name helps Ruby to distinguish its intended use
+  instance variable name starts with a @ sign
+  class variable name starts with a @@ sign
+  global variable name starts with a $ sign
+  constant name starts with an uppercase letter
+  Method names should begin with a lowercase letter
+  ?, ! and = are the only weird characters allowed as method name suffixes
+  ! or bang labels a method as dangerous-specifically
+  use underscores to separate words in a multiword method or variable name
+  Class names, module names and constants use capitalization
+=end</span>
+
+<span style="color:#777"># Ruby is dynamic</span>
+x = <span style="color:#00D">7</span>           <span style="color:#777"># integer</span>
+x = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">house</span><span style="color:#710">&quot;</span></span>  <span style="color:#777"># string</span>
+x = <span style="color:#60E">7.5</span>        <span style="color:#777"># real</span>
+
+<span style="color:#777"># In Ruby, everything you manipulate is an object</span>
+<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I love Ruby</span><span style="color:#710">'</span></span>.length
+
+<span style="color:#777"># p008mymethods.rb</span>
+<span style="color:#777"># A method returns the value of the last statement</span>
+<span style="color:#777"># Methods that act as queries are often named with a trailing ?</span>
+<span style="color:#777"># Methods that are &quot;dangerous,&quot; or modify the receiver, might be named with a trailing ! (Bang methods)</span>
+<span style="color:#777"># A simple method</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">hello</span>
+  <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#777">#use the method</span>
+puts hello
+
+<span style="color:#777"># Method with an argument - 1</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">hello1</span>(name)
+  <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello </span><span style="color:#710">'</span></span> + name
+<span style="color:#080;font-weight:bold">end</span>
+puts(hello1(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">satish</span><span style="color:#710">'</span></span>))
+
+<span style="color:#777"># Method with an argument - 2</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">hello2</span> name2
+   <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello </span><span style="color:#710">'</span></span> + name2
+<span style="color:#080;font-weight:bold">end</span>
+puts(hello2 <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">talim</span><span style="color:#710">'</span></span>)
+
+<span style="color:#777"># p009mymethods1.rb</span>
+<span style="color:#777"># interpolation refers to the process of inserting the result of an</span>
+<span style="color:#777"># expression into a string literal</span>
+<span style="color:#777"># the interpolation operator #{...} gets calculated separately</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">mtd</span>(arg1=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Dibya</span><span style="color:#710">&quot;</span></span>, arg2=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Shashank</span><span style="color:#710">&quot;</span></span>, arg3=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Shashank</span><span style="color:#710">&quot;</span></span>)
+  <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>arg1<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">, </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>arg2<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">, </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>arg3<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">.</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+puts mtd
+puts mtd(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">ruby</span><span style="color:#710">&quot;</span></span>)
+
+<span style="color:#777"># p010aliasmtd.rb</span>
+<span style="color:#777"># alias new_name old_name</span>
+<span style="color:#777"># When a method is aliased, the new name refers</span>
+<span style="color:#777"># to a copy of the original method's body</span>
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">oldmtd</span>
+  <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">old method</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">alias</span> <span style="color:#06B;font-weight:bold">newmtd</span> <span style="color:#06B;font-weight:bold">oldmtd</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">oldmtd</span>
+  <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">old improved method</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+puts oldmtd
+puts newmtd
+
+<span style="color:#777"># p011vararg.rb</span>
+<span style="color:#777"># variable number of parameters example</span>
+<span style="color:#777"># The asterisk is actually taking all arguments you send to the method</span>
+<span style="color:#777"># and assigning them to an array named my_string as shown below</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">foo</span>(*my_string)
+  my_string.inspect
+<span style="color:#080;font-weight:bold">end</span>
+puts foo(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">hello</span><span style="color:#710">'</span></span>,<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">world</span><span style="color:#710">'</span></span>)
+puts foo()
+
+<span style="color:#777"># p012mtdstack.rb</span>
+<span style="color:#777"># Sequence in which the parameters are put on to the stack is left to right</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">mtd</span>(a=<span style="color:#00D">99</span>, b=a+<span style="color:#00D">1</span>)
+  [a,b]
+<span style="color:#080;font-weight:bold">end</span>
+puts mtd
+
+<span style="color:#777"># p012zmm.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Dummy</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">method_missing</span>(m, *args)
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">There's no method called </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>m<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> here -- please try again.</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#036;font-weight:bold">Dummy</span>.new.anything
+
+<span style="color:#777"># p013expint.rb</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">say_goodnight</span>(name)
+  result = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Good night, </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">return</span> result
+<span style="color:#080;font-weight:bold">end</span>
+puts say_goodnight(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Satish</span><span style="color:#710">'</span></span>)
+
+<span style="color:#777"># modified program</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">say_goodnight2</span>(name)
+  <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Good night, </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+puts say_goodnight2(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Talim</span><span style="color:#710">'</span></span>)
+
+<span style="color:#777"># p013strcmp.rb</span>
+<span style="color:#777"># String#eql?, tests two strings for identical content. It returns the same result as ==</span>
+<span style="color:#777"># String#equal?, tests whether two strings are the same object</span>
+s1 = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Jonathan</span><span style="color:#710">'</span></span>
+s2 = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Jonathan</span><span style="color:#710">'</span></span>
+s3 = s1
+<span style="color:#080;font-weight:bold">if</span> s1 == s2
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Both Strings have identical content</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Both Strings do not have identical content</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">if</span> s1.eql?(s2)
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Both Strings have identical content</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Both Strings do not have identical content</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">if</span> s1.equal?(s2)
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Two Strings are identical objects</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Two Strings are not identical objects</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">if</span> s1.equal?(s3)
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Two Strings are identical objects</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Two Strings are not identical objects</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p014constructs.rb</span>
+<span style="color:#777"># In Ruby, nil and false evaluate to false, everything else (including true, 0) means true</span>
+<span style="color:#777"># nil is an actual object</span>
+<span style="color:#777"># if else end</span>
+var = <span style="color:#00D">5</span>
+<span style="color:#080;font-weight:bold">if</span> var &gt; <span style="color:#00D">4</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Variable is greater than 4</span><span style="color:#710">&quot;</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">I can have multiple statements here</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">if</span> var == <span style="color:#00D">5</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Nested if else possible</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">else</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Too cool</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Variable is not greater than 5</span><span style="color:#710">&quot;</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">I can have multiple statements here</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># Loops</span>
+var = <span style="color:#00D">0</span>
+<span style="color:#080;font-weight:bold">while</span> var &lt; <span style="color:#00D">10</span>
+  puts var.to_s
+  var += <span style="color:#00D">1</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p015elsifex.rb</span>
+<span style="color:#777"># elseif example</span>
+
+<span style="color:#777"># Original example</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Hello, what's your name?</span><span style="color:#710">&quot;</span></span>
+<span style="color:#069">STDOUT</span>.flush
+name = gets.chomp
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello, </span><span style="color:#710">'</span></span> + name + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">.</span><span style="color:#710">'</span></span>
+
+<span style="color:#080;font-weight:bold">if</span> name == <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Satish</span><span style="color:#710">'</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">What a nice name!!</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">else</span>
+  <span style="color:#080;font-weight:bold">if</span> name == <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Sunil</span><span style="color:#710">'</span></span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Another nice name!</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># Modified example with elseif</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Hello, what's your name?</span><span style="color:#710">&quot;</span></span>
+<span style="color:#069">STDOUT</span>.flush
+name = gets.chomp
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello, </span><span style="color:#710">'</span></span> + name + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">.</span><span style="color:#710">'</span></span>
+
+<span style="color:#080;font-weight:bold">if</span> name == <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Satish</span><span style="color:#710">'</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">What a nice name!!</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">elsif</span> name == <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Sunil</span><span style="color:#710">'</span></span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Another nice name!</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># Further modified</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Hello, what's your name?</span><span style="color:#710">&quot;</span></span>
+<span style="color:#069">STDOUT</span>.flush
+name = gets.chomp
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello, </span><span style="color:#710">'</span></span> + name + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">.</span><span style="color:#710">'</span></span>
+
+<span style="color:#777"># || is the logical or operator</span>
+<span style="color:#080;font-weight:bold">if</span> name == <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Satish</span><span style="color:#710">'</span></span> || name == <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Sunil</span><span style="color:#710">'</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">What a nice name!!</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p016leapyear.rb</span>
+<span style="color:#777">=begin
+Program to determine if a year is a leap year.
+
+To determine if a year is a leap year, follow these steps:
+1.   If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
+2.   If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
+3.   If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
+4.   The year is a leap year (it has 366 days).
+5.   The year is not a leap year (it has 365 days).
+
+The above logic is combined into a single if check below
+=end</span>
+
+<span style="color:#777"># Get the input and determine if it is a leap year</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Enter the year: </span><span style="color:#710">&quot;</span></span>
+<span style="color:#069">STDOUT</span>.flush
+input_year = gets.chomp.to_i
+<span style="color:#080;font-weight:bold">if</span> ((input_year % <span style="color:#00D">4</span> == <span style="color:#00D">0</span>) &amp;&amp; (input_year % <span style="color:#00D">100</span> &gt; <span style="color:#00D">0</span>)) || (input_year % <span style="color:#00D">400</span> == <span style="color:#00D">0</span>)
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Year </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>input_year<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> is a leap year</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Year </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>input_year<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> is not a leap year</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p017leapyearmtd.rb</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">leap_year</span>(input_year)
+  ((input_year % <span style="color:#00D">4</span> == <span style="color:#00D">0</span>)  &amp;&amp; (input_year % <span style="color:#00D">100</span> &gt; <span style="color:#00D">0</span>)) || (input_year % <span style="color:#00D">400</span> == <span style="color:#00D">0</span>)
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># Get the input and determine if it is a leap year</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Enter the year: </span><span style="color:#710">&quot;</span></span>
+<span style="color:#069">STDOUT</span>.flush
+input_year = gets.chomp.to_i
+<span style="color:#080;font-weight:bold">if</span> leap_year(input_year)
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Year </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>input_year<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> is a leap year and has </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span><span style="color:#00D">366</span>*<span style="color:#00D">60</span>*<span style="color:#00D">24</span><span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> minutes in the year</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Year </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>input_year<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> is not a leap year and has </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span><span style="color:#00D">365</span>*<span style="color:#00D">60</span>*<span style="color:#00D">24</span><span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> minutes in the year</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p018arrays.rb</span>
+<span style="color:#777"># Arrays</span>
+
+<span style="color:#777"># Empty array</span>
+var1 = []
+<span style="color:#777"># Array index starts from 0</span>
+puts var1[<span style="color:#00D">0</span>]
+
+<span style="color:#777"># an array holding a single number</span>
+var2 = [<span style="color:#00D">5</span>]
+puts var2[<span style="color:#00D">0</span>]
+
+<span style="color:#777"># an array holding two strings</span>
+var3 = [<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Goodbye</span><span style="color:#710">'</span></span>]
+puts var3[<span style="color:#00D">0</span>]
+puts var3[<span style="color:#00D">1</span>]
+
+flavour = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">mango</span><span style="color:#710">'</span></span>
+<span style="color:#777"># an array whose elements are pointing</span>
+<span style="color:#777"># to three objects - a float, a string and an array</span>
+var4 = [<span style="color:#60E">80.5</span>, flavour, [<span style="color:#069">true</span>, <span style="color:#069">false</span>]]
+puts var4[<span style="color:#00D">2</span>]
+
+<span style="color:#777"># a trailing comma is ignored</span>
+name = [<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Satish</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Talim</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Ruby</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Java</span><span style="color:#710">'</span></span>,]
+puts name[<span style="color:#00D">0</span>]
+puts name[<span style="color:#00D">1</span>]
+puts name[<span style="color:#00D">2</span>]
+puts name[<span style="color:#00D">3</span>]
+<span style="color:#777"># the next one outputs nil</span>
+<span style="color:#777"># nil is Ruby's way of saying nothing</span>
+puts name[<span style="color:#00D">4</span>]
+<span style="color:#777"># we can add more elements too</span>
+name[<span style="color:#00D">4</span>] = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Pune</span><span style="color:#710">'</span></span>
+puts name[<span style="color:#00D">4</span>]
+<span style="color:#777"># we can add anything!</span>
+name[<span style="color:#00D">5</span>] = <span style="color:#60E">4.33</span>
+puts name[<span style="color:#00D">5</span>]
+<span style="color:#777"># we can add an array to an array</span>
+name[<span style="color:#00D">6</span>] = [<span style="color:#00D">1</span>, <span style="color:#00D">2</span>, <span style="color:#00D">3</span>]
+puts name[<span style="color:#00D">6</span>]
+
+<span style="color:#777"># some methods on arrays</span>
+newarr = [<span style="color:#00D">45</span>, <span style="color:#00D">23</span>, <span style="color:#00D">1</span>, <span style="color:#00D">90</span>]
+puts newarr.sort
+puts newarr.length
+puts newarr.first
+puts newarr.last
+
+<span style="color:#777"># method each (iterator) - extracts each element into lang</span>
+<span style="color:#777"># do end is a block of code</span>
+<span style="color:#777"># variable lang refers to each item in the array as it goes through the loop</span>
+languages = [<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Pune</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Mumbai</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Bangalore</span><span style="color:#710">'</span></span>]
+
+languages.each <span style="color:#080;font-weight:bold">do</span> |lang|
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I love </span><span style="color:#710">'</span></span> + lang + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">!</span><span style="color:#710">'</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Don</span><span style="color:#b0b">\'</span><span style="color:#D20">t you?</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># delete an entry in the middle and shift the remaining entries</span>
+languages.delete(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Mumbai</span><span style="color:#710">'</span></span>)
+languages.each <span style="color:#080;font-weight:bold">do</span> |lang|
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I love </span><span style="color:#710">'</span></span> + lang + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">!</span><span style="color:#710">'</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Don</span><span style="color:#b0b">\'</span><span style="color:#D20">t you?</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p019mtdarry.rb</span>
+<span style="color:#777"># if you give return multiple parameters,</span>
+<span style="color:#777"># the method returns them in an array</span>
+<span style="color:#777"># The times method of the Integer class iterates block num times,</span>
+<span style="color:#777"># passing in values from zero to num-1</span>
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">mtdarry</span>
+  <span style="color:#00D">10</span>.times <span style="color:#080;font-weight:bold">do</span> |num|
+    square = num * num
+    <span style="color:#080;font-weight:bold">return</span> num, square
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># using parallel assignment to collect the return value</span>
+num, square = mtdarry
+puts num
+puts square
+
+<span style="color:#777"># p020arraysum.rb</span>
+<span style="color:#777"># Write a Ruby program that, when given an array</span>
+<span style="color:#777"># as collection = [1, 2, 3, 4, 5] it calculates the sum of its elements</span>
+collection = [<span style="color:#00D">1</span>, <span style="color:#00D">2</span>, <span style="color:#00D">3</span>, <span style="color:#00D">4</span>, <span style="color:#00D">5</span>]
+sum = <span style="color:#00D">0</span>
+collection.each {|i| sum += i}
+puts sum
+
+<span style="color:#777"># p021oddeven.rb</span>
+<span style="color:#777"># given an array as collection = [12, 23, 456, 123, 4579] it</span>
+<span style="color:#777"># displays for each number, whether it is odd or even</span>
+collection = [<span style="color:#00D">12</span>, <span style="color:#00D">23</span>, <span style="color:#00D">456</span>, <span style="color:#00D">123</span>, <span style="color:#00D">4579</span>]
+collection.each <span style="color:#080;font-weight:bold">do</span> |i|
+  <span style="color:#080;font-weight:bold">if</span> i % <span style="color:#00D">2</span> == <span style="color:#00D">0</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>i<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> is even</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">else</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>i<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> is odd</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p021ranges.rb</span>
+<span style="color:#777">=begin
+  Sequences have a start point, an end point, and a way to produce successive values in the sequence
+  In Ruby, sequences are created using the &quot;. .&quot; and &quot;. . .&quot; range operators.
+  The two dot form creates an inclusive range.
+  The three-dot form creates a  range that excludes the specified high value
+  The sequence 1..100000 is held as a Range object
+=end</span>
+digits = <span style="color:#00D">-1</span>..<span style="color:#00D">9</span>
+puts digits.include?(<span style="color:#00D">5</span>)        <span style="color:#777"># true</span>
+puts digits.min                  <span style="color:#777"># -1</span>
+puts digits.max                  <span style="color:#777"># 9</span>
+puts digits.reject {|i| i &lt; <span style="color:#00D">5</span> }  <span style="color:#777"># [5, 6, 7, 8, 9]</span>
+
+<span style="color:#777"># p021rangesex.rb</span>
+s = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">key=value</span><span style="color:#710">'</span></span>
+i = s.index(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">=</span><span style="color:#710">'</span></span>)
+<span style="color:#777"># If range supplied to a string, as below, a new String is created</span>
+puts s[<span style="color:#00D">0</span>...i]
+puts s[i+<span style="color:#00D">1</span>,s.length]
+
+<span style="color:#777"># p022codeblock.rb</span>
+<span style="color:#777">=begin
+  Ruby Code blocks are chunks of code between braces or
+  between do- end that you can associate with method invocations
+=end</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">call_block</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Start of method</span><span style="color:#710">'</span></span>
+  <span style="color:#777"># you can call the block using the yield keyword</span>
+  <span style="color:#080;font-weight:bold">yield</span>
+  <span style="color:#080;font-weight:bold">yield</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">End of method</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#777"># Code blocks may appear only in the source adjacent to a method call</span>
+call_block {puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">In the block</span><span style="color:#710">'</span></span>}
+
+<span style="color:#777"># p023codeblock2.rb</span>
+<span style="color:#777"># You can provide parameters to the call to yield:</span>
+<span style="color:#777"># these will be passed to the block</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">call_block</span>
+  <span style="color:#080;font-weight:bold">yield</span>(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">hello</span><span style="color:#710">'</span></span>, <span style="color:#00D">99</span>)
+<span style="color:#080;font-weight:bold">end</span>
+call_block {|str, num| puts str + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span> + num.to_s}
+
+<span style="color:#777"># p024proccall.rb</span>
+<span style="color:#777"># Blocks are not objects</span>
+<span style="color:#777"># they can be converted into objects of class Proc by calling lambda method</span>
+prc = lambda {puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello</span><span style="color:#710">'</span></span>}
+<span style="color:#777"># method call invokes the block</span>
+prc.call
+
+<span style="color:#777"># another example</span>
+toast = lambda <span style="color:#080;font-weight:bold">do</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Cheers</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+toast.call
+
+<span style="color:#777"># p025mtdproc.rb</span>
+<span style="color:#777">=begin
+  You cannot pass methods into other methods (but you can pass procs into methods),
+  and methods cannot return other methods (but they can return procs)
+=end</span>
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">some_mtd</span> some_proc
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Start of mtd</span><span style="color:#710">'</span></span>
+  some_proc.call
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">End of mtd</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+say = lambda <span style="color:#080;font-weight:bold">do</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+some_mtd say
+
+<span style="color:#777"># p026phrase.rb</span>
+<span style="color:#777">=begin
+  If you call rand, you'll get a float greater than or equal to 0.0
+  and less than 1.0. If you give it an integer parameter (by calling rand(5) ),
+  you will get an integer value greater than or equal to 0 and less than 5
+=end</span>
+
+<span style="color:#777"># The program below makes three lists of words, and then randomly picks one word</span>
+<span style="color:#777"># from each of the three lists and prints out the result</span>
+word_list_one = [<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">24/7</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">multi-Tier</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">30,000 foot</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">B-to-B</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">win-win</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">front-end</span><span style="color:#710">'</span></span>,
+                        <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">web-based</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">pervasive</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">smart</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">six-sigma</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">critical-path</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">dynamic</span><span style="color:#710">'</span></span>]
+word_list_two = [<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">empowered</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">sticky</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">value-added</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">oriented</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">centric</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">distributed</span><span style="color:#710">'</span></span>,
+                        <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">clustered</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">branded</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">outside-the-box</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">positioned</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">networked</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">focused</span><span style="color:#710">'</span></span>,
+                        <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">leveraged</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">aligned</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">targeted</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">shared</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">cooperative</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">accelerated</span><span style="color:#710">'</span></span>]
+word_list_three = [<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">process</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">tipping-point</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">solution</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">architecture</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">core competency</span><span style="color:#710">'</span></span>,
+                          <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">strategy</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">mindshare</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">portal</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">space</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">vision</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">paradigm</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">mission</span><span style="color:#710">'</span></span>]
+
+one_len = word_list_one.length
+two_len = word_list_two.length
+three_len = word_list_three.length
+
+rand1 = rand(one_len)
+rand2 = rand(two_len)
+rand3 = rand(three_len)
+
+phrase = word_list_one[rand1] + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20"> </span><span style="color:#710">&quot;</span></span> + word_list_two[rand2] + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20"> </span><span style="color:#710">&quot;</span></span> + word_list_three[rand3]
+
+puts phrase
+
+<span style="color:#777"># p026zdeafgm1.rb</span>
+<span style="color:#777">=begin
+  Write a Deaf Grandma program. Whatever you say to grandma
+  (whatever you type in), she should respond with HUH?!  SPEAK UP, SONNY!,
+  unless you shout it (type in all capitals). If you shout, she can hear you (
+  or at least she thinks so) and yells back, NO, NOT SINCE 1938!
+  To make your program really believable, have grandma shout a different year
+  each time; maybe any year at random between 1930 and 1950.
+  You can't stop talking to grandma until you shout BYE
+=end</span>
+a = ( <span style="color:#00D">1930</span>...<span style="color:#00D">1951</span>).to_a
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Enter your response: </span><span style="color:#710">'</span></span>
+<span style="color:#069">STDOUT</span>.flush
+<span style="color:#080;font-weight:bold">until</span> (response = gets.chomp).eql?(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">BYE</span><span style="color:#710">'</span></span>)
+  <span style="color:#080;font-weight:bold">if</span> (response.eql?(response.upcase ))
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">NO, NOT SINCE   </span><span style="color:#710">'</span></span> + a[rand(a.size)].to_s  + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> !</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">else</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">HUH?!   SPEAK UP, SONNY!</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Enter your response: </span><span style="color:#710">'</span></span>
+  <span style="color:#069">STDOUT</span>.flush
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p026zdeafgm2.rb</span>
+<span style="color:#777">=begin
+  Extend your Deaf Grandma program: What if grandma doesn't want you to leave?
+  When you shout BYE, she could pretend not to hear you. Change your previous
+  program so that you have to shout BYE three times in a row. Make sure to test
+  your program: if you shout BYE three times, but not in a row, you should still
+  be talking to grandma
+=end</span>
+a = ( <span style="color:#00D">1930</span>...<span style="color:#00D">1951</span>).to_a
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Enter your response: </span><span style="color:#710">'</span></span>
+<span style="color:#069">STDOUT</span>.flush
+<span style="color:#080;font-weight:bold">until</span> (response = gets.chomp).eql?(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">BYE BYE BYE</span><span style="color:#710">'</span></span>)
+  <span style="color:#080;font-weight:bold">if</span> response.eql?(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">BYE</span><span style="color:#710">'</span></span>)
+    <span style="color:#777"># do nothing</span>
+  <span style="color:#080;font-weight:bold">elsif</span> response.eql?(response.upcase)
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">NO, NOT SINCE   </span><span style="color:#710">'</span></span> + a[rand(a.size)].to_s  + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> !</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">else</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">HUH?!   SPEAK UP, SONNY!</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Enter your response: </span><span style="color:#710">'</span></span>
+  <span style="color:#069">STDOUT</span>.flush
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p027readwrite.rb</span>
+<span style="color:#777"># Open and read from a text file</span>
+<span style="color:#777"># Note that since a block is given, file will automatically be closed when the block terminates</span>
+<span style="color:#036;font-weight:bold">File</span>.open(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p014constructs.rb</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">r</span><span style="color:#710">'</span></span>) <span style="color:#080;font-weight:bold">do</span> |f1|
+  <span style="color:#080;font-weight:bold">while</span> line = f1.gets
+    puts line
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># Create a new file and write to it</span>
+<span style="color:#036;font-weight:bold">File</span>.open(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">test.rb</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">w</span><span style="color:#710">'</span></span>) <span style="color:#080;font-weight:bold">do</span> |f2|
+  <span style="color:#777"># use &quot;&quot; for two lines of text</span>
+  f2.puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Created by Satish</span><span style="color:#b0b">\n</span><span style="color:#D20">Thank God!</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p028swapcontents.rb - Program to swap the contents of 2 text files</span>
+<span style="color:#777"># Asuumptions: The two files exist in the same folder as the program</span>
+
+<span style="color:#777"># Function to read contents of one file and write them to another file</span>
+<span style="color:#777"># Accepts 2 file names - file1 and file2</span>
+<span style="color:#777"># Reads from file1 and writes to file2</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">filereadwrite</span>(file1, file2)
+  f2 = <span style="color:#036;font-weight:bold">File</span>.open(file2, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">w</span><span style="color:#710">&quot;</span></span>)
+  f1 = <span style="color:#036;font-weight:bold">File</span>.open(file1, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">r</span><span style="color:#710">&quot;</span></span>)
+  <span style="color:#080;font-weight:bold">while</span> line = f1.gets
+    f2.puts line
+  <span style="color:#080;font-weight:bold">end</span>
+  f1.close
+  f2.close
+<span style="color:#080;font-weight:bold">end</span>
+
+filereadwrite(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">file1</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">file1.tmp</span><span style="color:#710">&quot;</span></span>)
+filereadwrite(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">file2</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">file1</span><span style="color:#710">&quot;</span></span>)
+filereadwrite(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">file1.tmp</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">file2</span><span style="color:#710">&quot;</span></span>)
+
+<span style="color:#036;font-weight:bold">File</span>.delete(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">file1.tmp</span><span style="color:#710">'</span></span>)
+
+<span style="color:#777"># p028xrandom.rb</span>
+<span style="color:#777"># We now need to display the contents of the file from the word USA</span>
+f = <span style="color:#036;font-weight:bold">File</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">hellousa.rb</span><span style="color:#710">&quot;</span></span>)
+
+<span style="color:#777"># SEEK_CUR - Seeks to first integer number parameter plus current position</span>
+<span style="color:#777"># SEEK_END - Seeks to first integer number parameter plus end of stream</span>
+<span style="color:#777">#   (you probably want a negative value for first integer number parameter)</span>
+<span style="color:#777"># SEEK_SET - Seeks to the absolute location given by first integer number parameter</span>
+<span style="color:#777"># :: is the scope operator - more on this later</span>
+f.seek(<span style="color:#00D">12</span>, <span style="color:#036;font-weight:bold">IO</span>::<span style="color:#036;font-weight:bold">SEEK_SET</span>)
+print f.readline
+f.close
+
+<span style="color:#777"># p029dog.rb</span>
+<span style="color:#777"># define class Dog</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Dog</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(breed, name)
+    <span style="color:#777"># Instance variables</span>
+    <span style="color:#33B">@breed</span> = breed
+    <span style="color:#33B">@name</span> = name
+  <span style="color:#080;font-weight:bold">end</span>
+
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">bark</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Ruff! Ruff!</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">display</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">I am of </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span><span style="color:#33B">@breed</span><span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> breed and my name is </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span><span style="color:#33B">@name</span><span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777">=begin
+  Classes in Ruby are first-class objects - each is an instance of class Class.
+  When a new class is defined (typically using class Name ... end), an object of
+  type Class is created and assigned to a constant (Name. in this case).
+  When Name.new is called to create a new object, the new instance method in Class
+  is run by default, which in turn invokes allocate to allocate memory for the object,
+  before finally calling the new object's initialize method. The constructing and
+  initializing phases of an object are separate and both can be over-ridden.
+  The initialization is done via the initialize instance method while the construction
+  is done via the new class method. initialize is not a constructor!
+  Class Hierarchy - http://www.cs.mun.ca/%7Edonald/slug/2003-10-16/presentation/img5.html
+=end</span>
+
+<span style="color:#777"># make an object</span>
+<span style="color:#777"># Objects are created on the heap</span>
+d = <span style="color:#036;font-weight:bold">Dog</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Labrador</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Benzy</span><span style="color:#710">'</span></span>)
+
+<span style="color:#777">=begin
+  Every object is &quot;born&quot; with certain innate abilities.
+  To see a list of innate methods, you can call the methods
+  method (and throw in a sort operation, to make it
+  easier to browse visually)
+=end</span>
+puts d.methods.sort
+
+<span style="color:#777"># Amongst these many methods, the methods object_id and respond_to? are important.</span>
+<span style="color:#777"># Every object in Ruby has a unique id number associated with it</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The id of obj is </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>d.object_id<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">.</span><span style="color:#710">&quot;</span></span>
+
+<span style="color:#777"># To know whether the object knows how to handle the message you want</span>
+<span style="color:#777"># to send it, by using the respond_to? method.</span>
+<span style="color:#080;font-weight:bold">if</span> d.respond_to?(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">talk</span><span style="color:#710">&quot;</span></span>)
+  d.talk
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Sorry, the object doesn't understand the 'talk' message.</span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+d.bark
+d.display
+
+<span style="color:#777"># making d and d1 point to the same object</span>
+d1 = d
+d1.display
+
+<span style="color:#777"># making d a nil reference, meaning it does not refer to anything</span>
+d = <span style="color:#069">nil</span>
+d.display
+
+<span style="color:#777"># If I now say</span>
+d1 = <span style="color:#069">nil</span>
+<span style="color:#777"># then the Dog object is abandoned and eligible for Garbage Collection (GC)</span>
+<span style="color:#777">=begin
+  The Ruby object heap allocates a minimum of 8 megabytes.
+  Ruby's GC is called mark-and-sweep. The &quot;mark&quot; stage checks objects
+  to see if they are still in use. If an object is in a variable that
+  can still be used in the current scope, the object (and any object
+  inside that object) is marked for keeping. If the variable is long gone,
+  off in another method, the object isn't marked. The &quot;sweep&quot; stage then
+  frees objects which haven't been marked.
+  If you stuff something in an array and you happen to keep that array around,
+  it's all marked. If you stuff something in a constant or global variable,
+  it's forever marked.
+=end</span>
+
+<span style="color:#777"># p030motorcycle.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">MotorCycle</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(make, color)
+    <span style="color:#777"># Instance variables</span>
+    <span style="color:#33B">@make</span> = make
+    <span style="color:#33B">@color</span> = color
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">startEngine</span>
+    <span style="color:#080;font-weight:bold">if</span> (<span style="color:#33B">@engineState</span>)
+      puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Engine is already Running</span><span style="color:#710">'</span></span>
+    <span style="color:#080;font-weight:bold">else</span>
+      <span style="color:#33B">@engineState</span> = <span style="color:#069">true</span>
+      puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Engine Idle</span><span style="color:#710">'</span></span>
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p031motorcycletest.rb</span>
+require_relative <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p030motorcycle</span><span style="color:#710">'</span></span>
+m = <span style="color:#036;font-weight:bold">MotorCycle</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Yamaha</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">red</span><span style="color:#710">'</span></span>)
+m.startEngine
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">MotorCycle</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">dispAttr</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Color of MotorCycle is </span><span style="color:#710">'</span></span> + <span style="color:#33B">@color</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Make  of MotorCycle is </span><span style="color:#710">'</span></span> + <span style="color:#33B">@make</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+m.dispAttr
+m.startEngine
+puts <span style="color:#069">self</span>.class
+puts <span style="color:#069">self</span>
+puts <span style="color:#036;font-weight:bold">MotorCycle</span>.instance_methods(<span style="color:#069">false</span>).sort
+
+<span style="color:#777"># p031xdognext.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p029dog</span><span style="color:#710">'</span></span>
+<span style="color:#777"># define class Dog</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Dog</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">big_bark</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Woof! Woof!</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#777"># make an object</span>
+d = <span style="color:#036;font-weight:bold">Dog</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Labrador</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Benzy</span><span style="color:#710">'</span></span>)
+d.bark
+d.big_bark
+d.display
+
+<span style="color:#777"># p032mystring.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">String</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">writesize</span>
+    puts <span style="color:#069">self</span>.size
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+size_writer = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Tell me my size!</span><span style="color:#710">&quot;</span></span>
+size_writer.writesize
+
+<span style="color:#777"># p033mammal.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Mammal</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">breathe</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">inhale and exhale</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Cat</span>&lt;<span style="color:#036;font-weight:bold">Mammal</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">speak</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Meow</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+rani = <span style="color:#036;font-weight:bold">Cat</span>.new
+rani.breathe
+rani.speak
+
+<span style="color:#777"># p034bird.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Bird</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">preen</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">I am cleaning my feathers.</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">fly</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">I am flying.</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Penguin</span>&lt;<span style="color:#036;font-weight:bold">Bird</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">fly</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Sorry. I'd rather swim.</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+p = <span style="color:#036;font-weight:bold">Penguin</span>.new
+p.preen
+p.fly
+
+<span style="color:#777"># p035inherit.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">GF</span>
+  <span style="color:#33B">@m</span> =<span style="color:#00D">10</span>
+  puts <span style="color:#33B">@m</span>.object_id
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">In GF class</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">gfmethod</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">GF method call</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># class F sub-class of GF</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">F</span> &lt; <span style="color:#036;font-weight:bold">GF</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>
+    <span style="color:#080;font-weight:bold">super</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">In F class</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># class S sub-class of F</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">S</span> &lt; <span style="color:#036;font-weight:bold">F</span>
+ <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>
+   <span style="color:#080;font-weight:bold">super</span>
+   puts <span style="color:#33B">@m</span>
+   puts <span style="color:#33B">@m</span>.object_id
+   puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">In S class</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+son = <span style="color:#036;font-weight:bold">S</span>.new
+son.gfmethod
+
+<span style="color:#777"># p036duck.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Duck</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">quack</span>
+    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Quack!</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">swim</span>
+    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Paddle paddle paddle...</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Goose</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">honk</span>
+    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Honk!</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">swim</span>
+    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Splash splash splash...</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">DuckRecording</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">quack</span>
+    play
+<span style="color:#080;font-weight:bold">end</span>
+
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">play</span>
+    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Quack!</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">make_it_quack</span>(duck)
+  duck.quack
+<span style="color:#080;font-weight:bold">end</span>
+puts make_it_quack(<span style="color:#036;font-weight:bold">Duck</span>.new)
+puts make_it_quack(<span style="color:#036;font-weight:bold">DuckRecording</span>.new)
+
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">make_it_swim</span>(duck)
+  duck.swim
+<span style="color:#080;font-weight:bold">end</span>
+puts make_it_swim(<span style="color:#036;font-weight:bold">Duck</span>.new)
+puts make_it_swim(<span style="color:#036;font-weight:bold">Goose</span>.new)
+
+<span style="color:#777"># p037rectangle.rb</span>
+<span style="color:#777"># The Rectangle constructor accepts arguments in either</span>
+<span style="color:#777"># of the following forms:</span>
+<span style="color:#777">#   Rectangle.new([x_top, y_left], length, width)</span>
+<span style="color:#777">#   Rectangle.new([x_top, y_left], [x_bottom, y_right])</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Rectangle</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(*args)
+    <span style="color:#080;font-weight:bold">if</span> args.size &lt; <span style="color:#00D">2</span>  || args.size &gt; <span style="color:#00D">3</span>
+      <span style="color:#777"># modify this to raise exception, later</span>
+      puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">This method takes either 2 or 3 arguments</span><span style="color:#710">'</span></span>
+    <span style="color:#080;font-weight:bold">else</span>
+      <span style="color:#080;font-weight:bold">if</span> args.size == <span style="color:#00D">2</span>
+        puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Two arguments</span><span style="color:#710">'</span></span>
+      <span style="color:#080;font-weight:bold">else</span>
+        puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Three arguments</span><span style="color:#710">'</span></span>
+      <span style="color:#080;font-weight:bold">end</span>
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#036;font-weight:bold">Rectangle</span>.new([<span style="color:#00D">10</span>, <span style="color:#00D">23</span>], <span style="color:#00D">4</span>, <span style="color:#00D">10</span>)
+<span style="color:#036;font-weight:bold">Rectangle</span>.new([<span style="color:#00D">10</span>, <span style="color:#00D">23</span>], [<span style="color:#00D">14</span>, <span style="color:#00D">13</span>])
+
+<span style="color:#777"># p037xmtdovride.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">A</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">a</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">In class A</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">B</span> &lt; <span style="color:#036;font-weight:bold">A</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">a</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">In class B</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+b = <span style="color:#036;font-weight:bold">B</span>.new
+b.a
+
+<span style="color:#777"># p038bicycle.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Bicycle</span>
+  attr_reader <span style="color:#A60">:gears</span>, <span style="color:#A60">:wheels</span>, <span style="color:#A60">:seats</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(gears = <span style="color:#00D">1</span>)
+    <span style="color:#33B">@wheels</span> = <span style="color:#00D">2</span>
+    <span style="color:#33B">@seats</span> = <span style="color:#00D">1</span>
+    <span style="color:#33B">@gears</span> = gears
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Tandem</span> &lt; <span style="color:#036;font-weight:bold">Bicycle</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(gears)
+    <span style="color:#080;font-weight:bold">super</span>
+    <span style="color:#33B">@seats</span> = <span style="color:#00D">2</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+t = <span style="color:#036;font-weight:bold">Tandem</span>.new(<span style="color:#00D">2</span>)
+puts t.gears
+puts t.wheels
+puts t.seats
+b = <span style="color:#036;font-weight:bold">Bicycle</span>.new
+puts b.gears
+puts b.wheels
+puts b.seats
+
+<span style="color:#777"># p038or.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">OR</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">mtd</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">First definition of method mtd</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">mtd</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Second definition of method mtd</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#036;font-weight:bold">OR</span>.new.mtd
+
+<span style="color:#777"># p039symbol.rb</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">string</span><span style="color:#710">&quot;</span></span>.object_id
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">string</span><span style="color:#710">&quot;</span></span>.object_id
+puts <span style="color:#A60">:symbol</span>.object_id
+puts <span style="color:#A60">:symbol</span>.object_id
+
+<span style="color:#777"># p039xsymbol.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Test</span>
+  puts <span style="color:#A60">:Test</span>.object_id.to_s
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">test</span>
+    puts <span style="color:#A60">:test</span>.object_id.to_s
+    <span style="color:#33B">@test</span> = <span style="color:#00D">10</span>
+    puts <span style="color:#A60">:test</span>.object_id.to_s
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+t = <span style="color:#036;font-weight:bold">Test</span>.new
+t.test
+
+<span style="color:#777"># p039xyzsymbol.rb</span>
+know_ruby = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">yes</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">if</span> know_ruby == <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">yes</span><span style="color:#710">'</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">You are a Rubyist</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">else</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Start learning Ruby</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p040myhash.rb</span>
+h = {<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">dog</span><span style="color:#710">'</span></span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">canine</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">cat</span><span style="color:#710">'</span></span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">feline</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">donkey</span><span style="color:#710">'</span></span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">asinine</span><span style="color:#710">'</span></span>, <span style="color:#00D">12</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">dodecine</span><span style="color:#710">'</span></span>}
+puts h.length  <span style="color:#777"># 3</span>
+puts h[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">dog</span><span style="color:#710">'</span></span>]   <span style="color:#777"># 'canine'</span>
+puts h
+puts h[<span style="color:#00D">12</span>]
+
+<span style="color:#777"># p041symbolhash.rb</span>
+people = <span style="color:#036;font-weight:bold">Hash</span>.new
+people[<span style="color:#A60">:nickname</span>] = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">IndianGuru</span><span style="color:#710">'</span></span>
+people[<span style="color:#A60">:language</span>] = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Marathi</span><span style="color:#710">'</span></span>
+people[<span style="color:#A60">:lastname</span>] = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Talim</span><span style="color:#710">'</span></span>
+
+puts people[<span style="color:#A60">:lastname</span>] <span style="color:#777"># Talim</span>
+
+<span style="color:#777"># p042time.rb</span>
+t = <span style="color:#036;font-weight:bold">Time</span>.now
+<span style="color:#777"># to get day, month and year with century</span>
+<span style="color:#777"># also hour, minute and second</span>
+puts t.strftime(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">%d/%m/%Y %H:%M:%S</span><span style="color:#710">&quot;</span></span>)
+
+<span style="color:#777"># You can use the upper case A and B to get the full</span>
+<span style="color:#777"># name of the weekday and month, respectively</span>
+puts t.strftime(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">%A</span><span style="color:#710">&quot;</span></span>)
+puts t.strftime(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">%B</span><span style="color:#710">&quot;</span></span>)
+
+<span style="color:#777"># You can use the lower case a and b to get the abbreviated</span>
+<span style="color:#777"># name of the weekday and month, respectively</span>
+puts t.strftime(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">%a</span><span style="color:#710">&quot;</span></span>)
+puts t.strftime(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">%b</span><span style="color:#710">&quot;</span></span>)
+
+<span style="color:#777"># 24 hour clock and Time zone name</span>
+puts t.strftime(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">at %H:%M %Z</span><span style="color:#710">&quot;</span></span>)
+
+<span style="color:#777"># p043raise.rb</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">raise_exception</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I am before the raise.</span><span style="color:#710">'</span></span>
+  raise <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">An error has occured</span><span style="color:#710">'</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I am after the raise</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+raise_exception
+
+<span style="color:#777"># p044inverse.rb</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">inverse</span>(x)
+    raise <span style="color:#036;font-weight:bold">ArgumentError</span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Argument is not numeric</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">unless</span> x.is_a? <span style="color:#036;font-weight:bold">Numeric</span>
+    <span style="color:#60E">1.0</span> / x
+<span style="color:#080;font-weight:bold">end</span>
+puts inverse(<span style="color:#00D">2</span>)
+puts inverse(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">not a number</span><span style="color:#710">'</span></span>)
+
+<span style="color:#777"># p045handexcp.rb</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">raise_and_rescue</span>
+  <span style="color:#080;font-weight:bold">begin</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I am before the raise.</span><span style="color:#710">'</span></span>
+    raise <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">An error has occured.</span><span style="color:#710">'</span></span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I am after the raise.</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">rescue</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I am rescued.</span><span style="color:#710">'</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I am after the begin block.</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+raise_and_rescue
+
+<span style="color:#777"># p046excpvar.rb</span>
+<span style="color:#080;font-weight:bold">begin</span>
+  raise <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">A test exception.</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Exception</span> =&gt; e
+  puts e.message
+    puts e.backtrace.inspect
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p046xreadwrite.rb</span>
+<span style="color:#777"># Open and read from a text file</span>
+<span style="color:#777"># Note that since a block is given, file will automatically be closed when the block terminates</span>
+<span style="color:#080;font-weight:bold">begin</span>
+  <span style="color:#036;font-weight:bold">File</span>.open(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p014constructs.rb</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">r</span><span style="color:#710">'</span></span>) <span style="color:#080;font-weight:bold">do</span> |f1|
+    <span style="color:#080;font-weight:bold">while</span> line = f1.gets
+      puts line
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+
+  <span style="color:#777"># Create a new file and write to it</span>
+  <span style="color:#036;font-weight:bold">File</span>.open(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">test.rb</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">w</span><span style="color:#710">'</span></span>) <span style="color:#080;font-weight:bold">do</span> |f2|
+    <span style="color:#777"># use &quot;&quot; for two lines of text</span>
+    f2.puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Created by Satish</span><span style="color:#b0b">\n</span><span style="color:#D20">Thank God!</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Exception</span> =&gt; msg
+  <span style="color:#777"># display the system generated error message</span>
+  puts msg.message
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p047classaccess.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">ClassAccess</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">m1</span>      <span style="color:#777"># this method is public</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  protected
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">m2</span>      <span style="color:#777"># this method is protected</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  private
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">m3</span>      <span style="color:#777"># this method is private</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+ca = <span style="color:#036;font-weight:bold">ClassAccess</span>.new
+ca.m1
+<span style="color:#777">#ca.m2</span>
+<span style="color:#777">#ca.m3</span>
+
+<span style="color:#777"># p047zclassaccess.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Person</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(age)
+    <span style="color:#33B">@age</span> = age
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">age</span>
+    <span style="color:#33B">@age</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">compare_age</span>(c)
+    <span style="color:#080;font-weight:bold">if</span> c.age &gt; age
+      <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The other object's age is bigger.</span><span style="color:#710">&quot;</span></span>
+    <span style="color:#080;font-weight:bold">else</span>
+      <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The other object's age is the same or smaller.</span><span style="color:#710">&quot;</span></span>
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  protected <span style="color:#A60">:age</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+chris = <span style="color:#036;font-weight:bold">Person</span>.new(<span style="color:#00D">25</span>)
+marcos = <span style="color:#036;font-weight:bold">Person</span>.new(<span style="color:#00D">34</span>)
+puts chris.compare_age(marcos)
+<span style="color:#777">#puts chris.age</span>
+
+<span style="color:#777"># p048accessor.rb</span>
+<span style="color:#777"># First without accessor methods</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Song</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(name, artist)
+    <span style="color:#33B">@name</span>     = name
+    <span style="color:#33B">@artist</span>   = artist
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">name</span>
+    <span style="color:#33B">@name</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">artist</span>
+    <span style="color:#33B">@artist</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+song = <span style="color:#036;font-weight:bold">Song</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Brazil</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Ivete Sangalo</span><span style="color:#710">&quot;</span></span>)
+puts song.name
+puts song.artist
+
+<span style="color:#777"># Now, with accessor methods</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Song</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(name, artist)
+    <span style="color:#33B">@name</span>     = name
+    <span style="color:#33B">@artist</span>   = artist
+  <span style="color:#080;font-weight:bold">end</span>
+  attr_reader <span style="color:#A60">:name</span>, <span style="color:#A60">:artist</span>  <span style="color:#777"># create reader only</span>
+  <span style="color:#777"># For creating reader and writer methods</span>
+  <span style="color:#777"># attr_accessor :name</span>
+  <span style="color:#777"># For creating writer methods</span>
+  <span style="color:#777"># attr_writer :name</span>
+
+<span style="color:#080;font-weight:bold">end</span>
+
+song = <span style="color:#036;font-weight:bold">Song</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Brazil</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Ivete Sangalo</span><span style="color:#710">&quot;</span></span>)
+puts song.name
+puts song.artist
+
+<span style="color:#777"># p049instvarinherit.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">C</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>
+    <span style="color:#33B">@n</span> = <span style="color:#00D">100</span>
+  <span style="color:#080;font-weight:bold">end</span>
+
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">increase_n</span>
+    <span style="color:#33B">@n</span> *= <span style="color:#00D">20</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">D</span> &lt; <span style="color:#036;font-weight:bold">C</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">show_n</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">n is </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span><span style="color:#33B">@n</span><span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+d = <span style="color:#036;font-weight:bold">D</span>.new
+d.increase_n
+d.show_n
+
+<span style="color:#777"># p050newdog.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">NewDog</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(breed)
+    <span style="color:#33B">@breed</span> = breed
+  <span style="color:#080;font-weight:bold">end</span>
+  attr_reader <span style="color:#A60">:breed</span>, <span style="color:#A60">:name</span> <span style="color:#777"># create reader only</span>
+
+  <span style="color:#777"># setter method</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">name=</span>(nm)
+    <span style="color:#33B">@name</span> = nm
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+nd = <span style="color:#036;font-weight:bold">NewDog</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Doberman</span><span style="color:#710">'</span></span>)
+<span style="color:#777">#nd.name=('Benzy')</span>
+nd.name = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Benzy</span><span style="color:#710">'</span></span>
+puts nd.name
+
+<span style="color:#777"># p050xfreeze.rb</span>
+str = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">A simple string. </span><span style="color:#710">'</span></span>
+str.freeze
+<span style="color:#080;font-weight:bold">begin</span>
+  str &lt;&lt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">An attempt to modify.</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">rescue</span> =&gt; err
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>err.class<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>err<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#777"># The output is - TypeError can't modify frozen string</span>
+
+<span style="color:#777"># p051gamecharacters.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">GameCharacter</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(power, type, weapons)
+    <span style="color:#33B">@power</span> = power
+    <span style="color:#33B">@type</span> = type
+    <span style="color:#33B">@weapons</span> = weapons
+  <span style="color:#080;font-weight:bold">end</span>
+  attr_reader <span style="color:#A60">:power</span>, <span style="color:#A60">:type</span>, <span style="color:#A60">:weapons</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p052dumpgc.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p051gamecharacters</span><span style="color:#710">'</span></span>
+gc = <span style="color:#036;font-weight:bold">GameCharacter</span>.new(<span style="color:#00D">120</span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Magician</span><span style="color:#710">'</span></span>, [<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">spells</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">invisibility</span><span style="color:#710">'</span></span>])
+puts gc.power.to_s + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span> + gc.type + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span>
+gc.weapons.each <span style="color:#080;font-weight:bold">do</span> |w|
+  puts w + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#036;font-weight:bold">File</span>.open(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">game</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">w+</span><span style="color:#710">'</span></span>) <span style="color:#080;font-weight:bold">do</span> |f|
+  <span style="color:#036;font-weight:bold">Marshal</span>.dump(gc, f)
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p053loadgc.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p051gamecharacters</span><span style="color:#710">'</span></span>
+<span style="color:#036;font-weight:bold">File</span>.open(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">game</span><span style="color:#710">'</span></span>) <span style="color:#080;font-weight:bold">do</span> |f|
+  <span style="color:#33B">@gc</span> = <span style="color:#036;font-weight:bold">Marshal</span>.load(f)
+<span style="color:#080;font-weight:bold">end</span>
+
+puts <span style="color:#33B">@gc</span>.power.to_s + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span> + <span style="color:#33B">@gc</span>.type + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span>
+<span style="color:#33B">@gc</span>.weapons.each <span style="color:#080;font-weight:bold">do</span> |w|
+  puts w + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p054constwarn.rb</span>
+<span style="color:#036;font-weight:bold">A_CONST</span> = <span style="color:#00D">10</span>
+<span style="color:#036;font-weight:bold">A_CONST</span> = <span style="color:#00D">20</span>
+
+<span style="color:#777"># p055constalter.rb</span>
+<span style="color:#036;font-weight:bold">A_CONST</span> = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Doshi</span><span style="color:#710">&quot;</span></span>
+<span style="color:#036;font-weight:bold">B_CONST</span> = <span style="color:#036;font-weight:bold">A_CONST</span>
+<span style="color:#036;font-weight:bold">A_CONST</span>[<span style="color:#00D">0</span>] = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">J</span><span style="color:#710">&quot;</span></span> <span style="color:#777"># alter string referenced by constant</span>
+puts <span style="color:#036;font-weight:bold">A_CONST</span> <span style="color:#777"># displays Joshi</span>
+puts <span style="color:#036;font-weight:bold">B_CONST</span>
+
+<span style="color:#777"># p056const.rb</span>
+<span style="color:#036;font-weight:bold">OUTER_CONST</span> = <span style="color:#00D">99</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Const</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">get_const</span>
+    <span style="color:#036;font-weight:bold">CONST</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#036;font-weight:bold">CONST</span> = <span style="color:#036;font-weight:bold">OUTER_CONST</span> + <span style="color:#00D">1</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+puts <span style="color:#036;font-weight:bold">Const</span>.new.get_const
+puts <span style="color:#036;font-weight:bold">Const</span>::<span style="color:#036;font-weight:bold">CONST</span>
+puts ::<span style="color:#036;font-weight:bold">OUTER_CONST</span>
+puts <span style="color:#036;font-weight:bold">Const</span>::<span style="color:#036;font-weight:bold">NEW_CONST</span> = <span style="color:#00D">123</span>
+
+<span style="color:#777"># p057mymethods2.rb</span>
+<span style="color:#777"># variables and methods start lowercase</span>
+<span style="color:#d70">$glob</span> = <span style="color:#00D">5</span>             <span style="color:#777"># global variables start with $</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TestVar</span>         <span style="color:#777"># class name constant, start uppercase</span>
+ <span style="color:#369">@@cla</span> = <span style="color:#00D">6</span>            <span style="color:#777"># class variables start with @@</span>
+ <span style="color:#036;font-weight:bold">CONST_VAL</span> = <span style="color:#00D">7</span>        <span style="color:#777"># constant style, all caps, underscore</span>
+ <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(x)    <span style="color:#777"># constructor</span>
+  <span style="color:#33B">@inst</span> = x          <span style="color:#777"># instance variables start with @</span>
+  <span style="color:#369">@@cla</span> += <span style="color:#00D">1</span>         <span style="color:#777"># each object shares @@cla</span>
+ <span style="color:#080;font-weight:bold">end</span>
+ <span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">cla</span>         <span style="color:#777"># class method, getter</span>
+  <span style="color:#369">@@cla</span>
+ <span style="color:#080;font-weight:bold">end</span>
+ <span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">cla=</span>(y)     <span style="color:#777"># class method, setter, also TestVar.</span>
+  <span style="color:#369">@@cla</span> = y
+ <span style="color:#080;font-weight:bold">end</span>
+ <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">inst</span>             <span style="color:#777"># instance method, getter</span>
+  <span style="color:#33B">@inst</span>
+ <span style="color:#080;font-weight:bold">end</span>
+ <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">inst=</span>(i)         <span style="color:#777"># instance method, setter</span>
+  <span style="color:#33B">@inst</span> = i
+ <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+puts <span style="color:#d70">$glob</span>
+test = <span style="color:#036;font-weight:bold">TestVar</span>.new(<span style="color:#00D">3</span>) <span style="color:#777"># calls constructor</span>
+puts <span style="color:#036;font-weight:bold">TestVar</span>.cla      <span style="color:#777"># calls getter</span>
+puts test.inspect     <span style="color:#777"># gives object ID and instance vars</span>
+<span style="color:#036;font-weight:bold">TestVar</span>.cla = <span style="color:#00D">4</span>       <span style="color:#777"># calls setter</span>
+test.inst=<span style="color:#00D">8</span>           <span style="color:#777"># calls setter</span>
+puts <span style="color:#036;font-weight:bold">TestVar</span>.cla
+puts test.inst        <span style="color:#777"># calls getter</span>
+other = <span style="color:#036;font-weight:bold">TestVar</span>.new(<span style="color:#00D">17</span>)
+puts other.inspect
+puts <span style="color:#036;font-weight:bold">TestVar</span>.cla
+
+<span style="color:#777"># p058mytrig.rb</span>
+<span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Trig</span>
+  <span style="color:#036;font-weight:bold">PI</span> = <span style="color:#60E">3.1416</span>
+  <span style="color:#777"># class methods</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#036;font-weight:bold">Trig</span>.<span style="color:#06B;font-weight:bold">sin</span>(x)
+    <span style="color:#777"># ...</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#036;font-weight:bold">Trig</span>.<span style="color:#06B;font-weight:bold">cos</span>(x)
+    <span style="color:#777"># ...</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p059mymoral.rb</span>
+<span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Moral</span>
+  <span style="color:#036;font-weight:bold">VERY_BAD</span> = <span style="color:#00D">0</span>
+  <span style="color:#036;font-weight:bold">BAD</span>         = <span style="color:#00D">1</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#036;font-weight:bold">Moral</span>.<span style="color:#06B;font-weight:bold">sin</span>(badness)
+    <span style="color:#777"># ...</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p060usemodule.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p058mytrig</span><span style="color:#710">'</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p059mymoral</span><span style="color:#710">'</span></span>
+<span style="color:#036;font-weight:bold">Trig</span>.sin(<span style="color:#036;font-weight:bold">Trig</span>::<span style="color:#036;font-weight:bold">PI</span>/<span style="color:#00D">4</span>)
+<span style="color:#036;font-weight:bold">Moral</span>.sin(<span style="color:#036;font-weight:bold">Moral</span>::<span style="color:#036;font-weight:bold">VERY_BAD</span>)
+
+<span style="color:#777"># p061mixins.rb</span>
+<span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">D</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(name)
+    <span style="color:#33B">@name</span> =name
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">to_s</span>
+    <span style="color:#33B">@name</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Debug</span>
+  include <span style="color:#036;font-weight:bold">D</span>
+  <span style="color:#777"># Methods that act as queries are often</span>
+  <span style="color:#777"># named with a trailing ?</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">who_am_i?</span>
+    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span><span style="color:#069">self</span>.class.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> (</span><span style="color:#b0b">\#</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span><span style="color:#069">self</span>.object_id<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">): </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span><span style="color:#069">self</span>.to_s<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Phonograph</span>
+  <span style="color:#777"># the include statement simply makes a reference to a named module</span>
+  <span style="color:#777"># If that module is in a separate file, use require to drag the file in</span>
+  <span style="color:#777"># before using include</span>
+  include <span style="color:#036;font-weight:bold">Debug</span>
+  <span style="color:#777"># ...</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">EightTrack</span>
+  include <span style="color:#036;font-weight:bold">Debug</span>
+  <span style="color:#777"># ...</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+ph = <span style="color:#036;font-weight:bold">Phonograph</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">West End Blues</span><span style="color:#710">&quot;</span></span>)
+et = <span style="color:#036;font-weight:bold">EightTrack</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Real Pillow</span><span style="color:#710">&quot;</span></span>)
+puts ph.who_am_i?
+puts et.who_am_i?
+
+<span style="color:#777">#  p062stuff.rb</span>
+<span style="color:#777">#  A module may contain constants, methods and classes.</span>
+<span style="color:#777">#  No instances</span>
+
+<span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Stuff</span>
+  <span style="color:#036;font-weight:bold">C</span> = <span style="color:#00D">10</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#036;font-weight:bold">Stuff</span>.<span style="color:#06B;font-weight:bold">m</span>(x)  <span style="color:#777"># prefix with the module name for a class method</span>
+    <span style="color:#036;font-weight:bold">C</span>*x
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">p</span>(x)        <span style="color:#777"># an instance method, mixin for other classes</span>
+    <span style="color:#036;font-weight:bold">C</span> + x
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">T</span>
+    <span style="color:#33B">@t</span> = <span style="color:#00D">2</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+puts <span style="color:#036;font-weight:bold">Stuff</span>::<span style="color:#036;font-weight:bold">C</span>     <span style="color:#777"># Stuff namespace</span>
+puts <span style="color:#036;font-weight:bold">Stuff</span>.m(<span style="color:#00D">3</span>)   <span style="color:#777"># like a class method</span>
+x = <span style="color:#036;font-weight:bold">Stuff</span>::<span style="color:#036;font-weight:bold">T</span>.new
+<span style="color:#777"># uninitialized constant error, if you try the following</span>
+<span style="color:#777"># puts C</span>
+
+<span style="color:#777"># p063stuffusage.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p062stuff</span><span style="color:#710">'</span></span>     <span style="color:#777"># loads Stuff module from Stuff.rb</span>
+                    <span style="color:#777"># $: is a system variable -- contains the path for loads</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">D</span>
+  include <span style="color:#036;font-weight:bold">Stuff</span>     <span style="color:#777"># refers to the loaded module</span>
+  puts <span style="color:#036;font-weight:bold">Stuff</span>.m(<span style="color:#00D">4</span>)
+<span style="color:#080;font-weight:bold">end</span>
+
+d = <span style="color:#036;font-weight:bold">D</span>.new
+puts d.p(<span style="color:#00D">5</span>)         <span style="color:#777"># method p from Stuff</span>
+puts <span style="color:#d70">$:</span>             <span style="color:#777"># array of folders to search for load</span>
+<span style="color:#d70">$:</span> &lt;&lt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">c:/</span><span style="color:#710">&quot;</span></span>         <span style="color:#777"># add a folder to the load path</span>
+puts <span style="color:#d70">$:</span>
+puts <span style="color:#036;font-weight:bold">Stuff</span>.m(<span style="color:#00D">5</span>)     <span style="color:#777"># Stuff class methods not called from D object</span>
+
+<span style="color:#777"># p063xself1.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">S</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Just started class S</span><span style="color:#710">'</span></span>
+  puts <span style="color:#069">self</span>
+  <span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">M</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Nested module S::M</span><span style="color:#710">'</span></span>
+    puts <span style="color:#069">self</span>
+  <span style="color:#080;font-weight:bold">end</span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Back in the outer level of S</span><span style="color:#710">'</span></span>
+  puts <span style="color:#069">self</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p063xself2.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">S</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">m</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Class S method m:</span><span style="color:#710">'</span></span>
+    puts <span style="color:#069">self</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+s = <span style="color:#036;font-weight:bold">S</span>.new
+s.m
+
+<span style="color:#777"># p063xself3.rb</span>
+obj = <span style="color:#036;font-weight:bold">Object</span>.new
+<span style="color:#080;font-weight:bold">def</span> obj.<span style="color:#06B;font-weight:bold">show</span>
+  print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">I am an object: </span><span style="color:#710">'</span></span>
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">here's self inside a singleton method of mine:</span><span style="color:#710">&quot;</span></span>
+  puts <span style="color:#069">self</span>
+<span style="color:#080;font-weight:bold">end</span>
+obj.show
+print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">And inspecting obj from outside, </span><span style="color:#710">'</span></span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">to be sure it's the same object:</span><span style="color:#710">&quot;</span></span>
+puts obj
+
+<span style="color:#777"># p063xself4.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">S</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#036;font-weight:bold">S</span>.<span style="color:#06B;font-weight:bold">x</span>
+    puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Class method of class S</span><span style="color:#710">&quot;</span></span>
+    puts <span style="color:#069">self</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#036;font-weight:bold">S</span>.x
+
+<span style="color:#777"># p064regexp.rb</span>
+string = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">My phone number is (123) 555-1234.</span><span style="color:#710">&quot;</span></span>
+phone_re = <span style="background-color:hsla(300,100%,50%,0.06)"><span style="color:#404">/</span><span style="color:#D20">\(</span><span style="color:#808">(</span><span style="color:#D20">\d</span><span style="color:#808">{3})</span><span style="color:#D20">\)</span><span style="color:#D20">\s</span><span style="color:#808">+(</span><span style="color:#D20">\d</span><span style="color:#808">{3})-(</span><span style="color:#D20">\d</span><span style="color:#808">{4})</span><span style="color:#404">/</span></span>
+m = phone_re.match(string)
+<span style="color:#080;font-weight:bold">unless</span> m
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">There was no match...</span><span style="color:#710">&quot;</span></span>
+  exit
+<span style="color:#080;font-weight:bold">end</span>
+print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The whole string we started with: </span><span style="color:#710">&quot;</span></span>
+puts m.string
+print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The entire part of the string that matched: </span><span style="color:#710">&quot;</span></span>
+puts m[<span style="color:#00D">0</span>]
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The three captures: </span><span style="color:#710">&quot;</span></span>
+<span style="color:#00D">3</span>.times <span style="color:#080;font-weight:bold">do</span> |index|
+  puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Capture #</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>index + <span style="color:#00D">1</span><span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>m.captures[index]<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span style="color:#080;font-weight:bold">end</span>
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Here's another way to get at the first capture:</span><span style="color:#710">&quot;</span></span>
+print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Capture #1: </span><span style="color:#710">&quot;</span></span>
+puts m[<span style="color:#00D">1</span>]
+
+<span style="color:#777"># p065my_first_test.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">test/unit</span><span style="color:#710">'</span></span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">MyFirstTest</span> &lt; <span style="color:#036;font-weight:bold">Test</span>::<span style="color:#036;font-weight:bold">Unit</span>::<span style="color:#036;font-weight:bold">TestCase</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">test_for_truth</span>
+    assert <span style="color:#069">true</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span> 
+
+<span style="color:#777"># p066testradius.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">test/unit</span><span style="color:#710">'</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">p067radius</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TestRadius</span> &lt; <span style="color:#036;font-weight:bold">Test</span>::<span style="color:#036;font-weight:bold">Unit</span>::<span style="color:#036;font-weight:bold">TestCase</span>
+<span style="color:#777">=begin
+  def test_key
+    robj = Radius.new('78')
+    assert_equal('78', robj.key)
+    robj = Radius.new(78)
+    assert_equal('78', robj.key)
+      robj = Radius.new([78])
+    assert_nil(robj.key)
+  end
+end
+=end</span>
+
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">setup</span>
+    <span style="color:#33B">@robj</span> = <span style="color:#036;font-weight:bold">Radius</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">78</span><span style="color:#710">'</span></span>)
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">test_key</span>
+    assert_equal(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">78</span><span style="color:#710">'</span></span>, <span style="color:#33B">@robj</span>.key)
+    <span style="color:#33B">@robj</span> = <span style="color:#036;font-weight:bold">Radius</span>.new(<span style="color:#00D">78</span>)
+    assert_equal(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">78</span><span style="color:#710">'</span></span>, <span style="color:#33B">@robj</span>.key)
+    <span style="color:#33B">@robj</span> = <span style="color:#036;font-weight:bold">Radius</span>.new([<span style="color:#00D">78</span>])
+    assert_nil(<span style="color:#33B">@robj</span>.key)
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p067radius.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Radius</span>
+  attr_reader <span style="color:#A60">:key</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(key)
+    <span style="color:#33B">@key</span> = key
+    <span style="color:#080;font-weight:bold">if</span> <span style="color:#33B">@key</span>.class == <span style="color:#036;font-weight:bold">Fixnum</span> <span style="color:#080;font-weight:bold">then</span>
+      <span style="color:#33B">@key</span> = <span style="color:#33B">@key</span>.to_s
+    <span style="color:#080;font-weight:bold">end</span>
+    <span style="color:#080;font-weight:bold">if</span> <span style="color:#33B">@key</span>.class != <span style="color:#036;font-weight:bold">String</span> <span style="color:#080;font-weight:bold">then</span>
+      <span style="color:#33B">@key</span> = <span style="color:#069">nil</span>
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p068dtserver.rb</span>
+<span style="color:#777"># Date Time Server - server side using thread</span>
+<span style="color:#777"># usage: ruby p068dtserver.rb</span>
+
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">socket</span><span style="color:#710">&quot;</span></span>
+
+dts = <span style="color:#036;font-weight:bold">TCPServer</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">localhost</span><span style="color:#710">'</span></span>, <span style="color:#00D">20000</span>)
+loop <span style="color:#080;font-weight:bold">do</span>
+  <span style="color:#036;font-weight:bold">Thread</span>.start(dts.accept) <span style="color:#080;font-weight:bold">do</span> |s|
+    print(s, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20"> is accepted</span><span style="color:#b0b">\n</span><span style="color:#710">&quot;</span></span>)
+    s.write(<span style="color:#036;font-weight:bold">Time</span>.now)
+    print(s, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20"> is gone</span><span style="color:#b0b">\n</span><span style="color:#710">&quot;</span></span>)
+    s.close
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p069dtclient.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">socket</span><span style="color:#710">'</span></span>
+
+streamSock = <span style="color:#036;font-weight:bold">TCPSocket</span>.new( <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">127.0.0.1</span><span style="color:#710">&quot;</span></span>, <span style="color:#00D">20000</span> )
+<span style="color:#777">#streamSock.send( &quot;Hello\n&quot; )</span>
+str = streamSock.recv( <span style="color:#00D">100</span> )
+print str
+streamSock.close
+
+<span style="color:#777"># p070rubysmtp.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">net/smtp</span><span style="color:#710">'</span></span>
+user_from = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">superman@world.com</span><span style="color:#710">&quot;</span></span>
+user_to = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">batman@world.com</span><span style="color:#710">&quot;</span></span>
+the_email = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">From: superman@world.com</span><span style="color:#b0b">\n</span><span style="color:#D20">Subject: Hello</span><span style="color:#b0b">\n</span><span style="color:#b0b">\n</span><span style="color:#D20">Email by Ruby.</span><span style="color:#b0b">\n</span><span style="color:#b0b">\n</span><span style="color:#710">&quot;</span></span>
+<span style="color:#777"># handling exceptions</span>
+<span style="color:#080;font-weight:bold">begin</span>
+  <span style="color:#036;font-weight:bold">Net</span>::<span style="color:#036;font-weight:bold">SMTP</span>.start(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">localhost</span><span style="color:#710">'</span></span>, <span style="color:#00D">25</span>) <span style="color:#080;font-weight:bold">do</span> |smtpclient|
+    smtpclient.send_message(the_email, user_from, user_to)
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Exception</span> =&gt; e
+  print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Exception occured: </span><span style="color:#710">&quot;</span></span> + e
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#777"># p070thread1.rb</span>
+puts <span style="color:#036;font-weight:bold">Thread</span>.main
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#710">&quot;</span></span>
+t1 = <span style="color:#036;font-weight:bold">Thread</span>.new {sleep <span style="color:#00D">100</span>}
+<span style="color:#036;font-weight:bold">Thread</span>.list.each {|thr| p thr }
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Current thread = </span><span style="color:#710">&quot;</span></span> + <span style="color:#036;font-weight:bold">Thread</span>.current.to_s
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#710">&quot;</span></span>
+
+t2 = <span style="color:#036;font-weight:bold">Thread</span>.new {sleep <span style="color:#00D">100</span>}
+<span style="color:#036;font-weight:bold">Thread</span>.list.each {|thr| p thr }
+puts <span style="color:#036;font-weight:bold">Thread</span>.current
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#710">&quot;</span></span>
+
+<span style="color:#036;font-weight:bold">Thread</span>.kill(t1)
+<span style="color:#036;font-weight:bold">Thread</span>.pass                         <span style="color:#777"># pass execution to t2 now</span>
+t3 = <span style="color:#036;font-weight:bold">Thread</span>.new <span style="color:#080;font-weight:bold">do</span>
+  sleep <span style="color:#00D">20</span>
+  <span style="color:#036;font-weight:bold">Thread</span>.exit                        <span style="color:#777"># exit the thread</span>
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#036;font-weight:bold">Thread</span>.kill(t2)                      <span style="color:#777"># now kill t2</span>
+<span style="color:#036;font-weight:bold">Thread</span>.list.each {|thr| p thr }
+
+<span style="color:#777"># now exit the main thread (killing any others)</span>
+<span style="color:#036;font-weight:bold">Thread</span>.exit
+
+<span style="color:#777"># p070thread.rb</span>
+x = <span style="color:#036;font-weight:bold">Thread</span>.new { sleep <span style="color:#60E">0.1</span>; print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">x</span><span style="color:#710">&quot;</span></span>; print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">y</span><span style="color:#710">&quot;</span></span>; print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">z</span><span style="color:#710">&quot;</span></span> }
+a = <span style="color:#036;font-weight:bold">Thread</span>.new { print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">a</span><span style="color:#710">&quot;</span></span>; print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">b</span><span style="color:#710">&quot;</span></span>; sleep <span style="color:#60E">0.2</span>; print <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">c</span><span style="color:#710">&quot;</span></span> }
+x.join <span style="color:#777"># Let the threads finish before</span>
+a.join <span style="color:#777"># main thread exits...</span>
+
+<span style="color:#777"># p072soapserver.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">logger</span><span style="color:#710">'</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">soap/rpc/standaloneServer</span><span style="color:#710">'</span></span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">MyServer</span> &lt; <span style="color:#036;font-weight:bold">SOAP</span>::<span style="color:#036;font-weight:bold">RPC</span>::<span style="color:#036;font-weight:bold">StandaloneServer</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(* args)
+    <span style="color:#080;font-weight:bold">super</span>
+    add_method(<span style="color:#069">self</span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">sayhelloto</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">username</span><span style="color:#710">'</span></span>)
+    <span style="color:#33B">@log</span> = <span style="color:#036;font-weight:bold">Logger</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">soapserver.log</span><span style="color:#710">&quot;</span></span>, <span style="color:#00D">5</span>, <span style="color:#00D">10</span>*<span style="color:#00D">1024</span>)
+  <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">sayhelloto</span>(username)
+    t = <span style="color:#036;font-weight:bold">Time</span>.now
+    <span style="color:#33B">@log</span>.info(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>username<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> logged on </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>t<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>)
+    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Hello, </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>username<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> on </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>t<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">.</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+server = <span style="color:#036;font-weight:bold">MyServer</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">RubyLearningServer</span><span style="color:#710">'</span></span>,<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">urn:mySoapServer</span><span style="color:#710">'</span></span>,<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">localhost</span><span style="color:#710">'</span></span>,<span style="color:#00D">12321</span>)
+trap(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">INT</span><span style="color:#710">'</span></span>) {server.shutdown}
+server.start
+
+<span style="color:#777"># p073prclient.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">soap/rpc/driver</span><span style="color:#710">'</span></span>
+driver = <span style="color:#036;font-weight:bold">SOAP</span>::<span style="color:#036;font-weight:bold">RPC</span>::<span style="color:#036;font-weight:bold">Driver</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">http://127.0.0.1:12321/</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">urn:mySoapServer</span><span style="color:#710">'</span></span>)
+driver.add_method(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">sayhelloto</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">username</span><span style="color:#710">'</span></span>)
+puts driver.sayhelloto(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">RubyLearning</span><span style="color:#710">'</span></span>)
+
+<span style="color:#777"># p074hellotk.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">tk</span><span style="color:#710">'</span></span>
+hello = <span style="color:#036;font-weight:bold">TkRoot</span>.new {title <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Hello World</span><span style="color:#710">&quot;</span></span>}
+<span style="color:#036;font-weight:bold">Tk</span>.mainloop
+
+<span style="color:#777"># p075hellotk1.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">tk</span><span style="color:#710">'</span></span>
+hello = <span style="color:#036;font-weight:bold">TkRoot</span>.new <span style="color:#080;font-weight:bold">do</span>
+  title <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Hello World</span><span style="color:#710">&quot;</span></span>
+  <span style="color:#777"># the min size of window</span>
+  minsize(<span style="color:#00D">400</span>,<span style="color:#00D">400</span>)
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#036;font-weight:bold">TkLabel</span>.new(hello) <span style="color:#080;font-weight:bold">do</span>
+  text <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Hello World</span><span style="color:#710">'</span></span>
+  foreground <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">red</span><span style="color:#710">'</span></span>
+  pack { padx <span style="color:#00D">15</span>; pady <span style="color:#00D">15</span>; side <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">left</span><span style="color:#710">'</span></span>}
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#036;font-weight:bold">Tk</span>.mainloop
+
+<span style="color:#777"># p076hellotk2.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">tk</span><span style="color:#710">'</span></span>
+<span style="color:#036;font-weight:bold">TkButton</span>.new <span style="color:#080;font-weight:bold">do</span>
+  text <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">EXIT</span><span style="color:#710">&quot;</span></span>
+  command { exit }
+  pack(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">side</span><span style="color:#710">'</span></span>=&gt;<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">left</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">padx</span><span style="color:#710">'</span></span>=&gt;<span style="color:#00D">10</span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">pady</span><span style="color:#710">'</span></span>=&gt;<span style="color:#00D">10</span>)
+<span style="color:#080;font-weight:bold">end</span>
+<span style="color:#036;font-weight:bold">Tk</span>.mainloop
+
+<span style="color:#777"># p077soapguiclient.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">soap/rpc/driver</span><span style="color:#710">'</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">tk</span><span style="color:#710">'</span></span>
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">SOAPGuiClient</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">connect</span>
+    <span style="color:#33B">@buttonconnect</span>.configure(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">text</span><span style="color:#710">'</span></span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Reset</span><span style="color:#710">'</span></span>)
+    <span style="color:#33B">@buttonconnect</span>.command { reset }
+    <span style="color:#080;font-weight:bold">begin</span>
+      driver = <span style="color:#036;font-weight:bold">SOAP</span>::<span style="color:#036;font-weight:bold">RPC</span>::<span style="color:#036;font-weight:bold">Driver</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">http://217.160.200.122:12321/</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">urn:mySoapServer</span><span style="color:#710">'</span></span>)
+      driver.add_method(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">sayhelloto</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">username</span><span style="color:#710">'</span></span>)
+      s = driver.sayhelloto(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Satish Talim</span><span style="color:#710">'</span></span>)
+    <span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Exception</span> =&gt; e
+      s =  <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Exception occured: </span><span style="color:#710">&quot;</span></span> + e
+    <span style="color:#080;font-weight:bold">ensure</span>
+      <span style="color:#33B">@label</span>.configure(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">text</span><span style="color:#710">'</span></span> =&gt; s)
+    <span style="color:#080;font-weight:bold">end</span>
+  <span style="color:#080;font-weight:bold">end</span> <span style="color:#777">#connect</span>
+
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">reset</span>
+    <span style="color:#33B">@label</span>.configure(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">text</span><span style="color:#710">'</span></span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#710">&quot;</span></span>)
+    <span style="color:#33B">@buttonconnect</span>.configure(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">text</span><span style="color:#710">'</span></span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Connect</span><span style="color:#710">'</span></span>)
+    <span style="color:#33B">@buttonconnect</span>.command { connect }
+  <span style="color:#080;font-weight:bold">end</span> <span style="color:#777"># reset</span>
+
+<span style="color:#777">#---</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>
+    root = <span style="color:#036;font-weight:bold">TkRoot</span>.new <span style="color:#080;font-weight:bold">do</span>
+      title <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">SOAP Client</span><span style="color:#710">'</span></span>
+      <span style="color:#777"># the min size of window</span>
+      minsize(<span style="color:#00D">535</span>, <span style="color:#00D">100</span>)
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#777">#---</span>
+    <span style="color:#33B">@label</span> = <span style="color:#036;font-weight:bold">TkLabel</span>.new(root) <span style="color:#080;font-weight:bold">do</span>
+      pack
+    <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#777">#---</span>
+    <span style="color:#33B">@buttonconnect</span> = <span style="color:#036;font-weight:bold">TkButton</span>.new(root)
+    <span style="color:#33B">@buttonconnect</span>.configure(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">text</span><span style="color:#710">'</span></span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Connect</span><span style="color:#710">'</span></span>)
+    <span style="color:#33B">@buttonconnect</span>.command { connect }
+    <span style="color:#33B">@buttonconnect</span>.pack(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">side</span><span style="color:#710">'</span></span>=&gt;<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">bottom</span><span style="color:#710">'</span></span>)
+<span style="color:#777">#---</span>
+    <span style="color:#036;font-weight:bold">Tk</span>.mainloop
+  <span style="color:#080;font-weight:bold">end</span> <span style="color:#777">#initialize</span>
+<span style="color:#080;font-weight:bold">end</span> <span style="color:#777"># class</span>
+
+<span style="color:#036;font-weight:bold">SOAPGuiClient</span>.new
+<span style="color:#777">#---</span>
+
+<span style="color:#777"># p078rubymysql.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">mysql</span><span style="color:#710">'</span></span>
+
+<span style="color:#777">#my = Mysql.new(hostname, username, password, databasename)</span>
+con = <span style="color:#036;font-weight:bold">Mysql</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">localhost</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">root</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">ruby</span><span style="color:#710">'</span></span>)
+rs = con.query(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">select * from student</span><span style="color:#710">'</span></span>)
+rs.each_hash { |h| puts h[<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">name</span><span style="color:#710">'</span></span>]}
+con.close
+
+<span style="color:#777"># p079rubyquirk1.rb</span>
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">MotorCycle</span>
+  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span>(make, color)
+    <span style="color:#33B">@make</span>, <span style="color:#33B">@color</span> = make, color
+  <span style="color:#080;font-weight:bold">end</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+m = <span style="color:#036;font-weight:bold">MotorCycle</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Honda</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">blue</span><span style="color:#710">'</span></span>)
+m.instance_variable_set(<span style="color:#A60">:@make</span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Kawasaki</span><span style="color:#710">'</span></span>)
+m.instance_variable_set(<span style="color:#A60">:@gears</span>, <span style="color:#00D">4</span>)
+puts m.inspect
+
+<span style="color:#777"># p080dbconnect.rb</span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">rubygems</span><span style="color:#710">'</span></span>
+require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">active_record</span><span style="color:#710">'</span></span>
+<span style="color:#036;font-weight:bold">ActiveRecord</span>::<span style="color:#036;font-weight:bold">Base</span>.establish_connection(
+<span style="color:#A60">:adapter</span>=&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">mysql</span><span style="color:#710">&quot;</span></span>,
+<span style="color:#A60">:host</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">localhost</span><span style="color:#710">&quot;</span></span>,
+<span style="color:#A60">:database</span>=&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">students</span><span style="color:#710">&quot;</span></span>
+)
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Rubyist</span> &lt; <span style="color:#036;font-weight:bold">ActiveRecord</span>::<span style="color:#036;font-weight:bold">Base</span>
+<span style="color:#080;font-weight:bold">end</span>
+
+<span style="color:#036;font-weight:bold">Rubyist</span>.create(<span style="color:#A60">:name</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Mitali Talim</span><span style="color:#710">'</span></span>, <span style="color:#A60">:city</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Nashville, Tenessee</span><span style="color:#710">&quot;</span></span>)
+<span style="color:#036;font-weight:bold">Rubyist</span>.create(<span style="color:#A60">:name</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Sunil Kelkar</span><span style="color:#710">'</span></span>, <span style="color:#A60">:city</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Pune, India</span><span style="color:#710">&quot;</span></span>)
+<span style="color:#036;font-weight:bold">Rubyist</span>.create(<span style="color:#A60">:name</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Adam Smith</span><span style="color:#710">'</span></span>, <span style="color:#A60">:city</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">San Fransisco, USA</span><span style="color:#710">&quot;</span></span>)
+
+participant = <span style="color:#036;font-weight:bold">Rubyist</span>.find(<span style="color:#A60">:first</span>)
+puts <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">%{</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>participant.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> stays in </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>participant.city<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">}</span></span>
+
+<span style="color:#036;font-weight:bold">Rubyist</span>.find(<span style="color:#A60">:first</span>).destroy
+</pre></div>
+</div>
+</div>
+
+    </div>
+  </body>
+</html>
