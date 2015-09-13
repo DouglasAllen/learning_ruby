@@ -13,6 +13,10 @@ https://ahsansblog.herokuapp.com/closures-in-ruby-blocks-procs-and-lambdas/
 
 http://martinfowler.com/bliki/Lambda.html
 
+http://pastebin.com/NfPStA0T
+
+http://www.youtube.com/watch?v=VBC-G6hahWA
+
 === Meta Programming
 
 http://rubyquiz.com/quiz67.html
