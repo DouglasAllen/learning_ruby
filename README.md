@@ -7,6 +7,12 @@ http://rubykoans.com/windows
 
 https://rubymonk.com/
 
+=== Closures
+
+https://ahsansblog.herokuapp.com/closures-in-ruby-blocks-procs-and-lambdas/
+
+http://martinfowler.com/bliki/Lambda.html
+
 === Meta Programming
 
 http://rubyquiz.com/quiz67.html
