@@ -1,6 +1,10 @@
 learning_ruby
 =============
 
+https://www.youtube.com/watch?v=lKmY_0uY86s
+
+https://www.youtube.com/watch?v=0npv906IQag
+
 http://www.jasimabasheer.com/posts/meta_introduction_to_ruby.html
 
 http://rubykoans.com/windows
