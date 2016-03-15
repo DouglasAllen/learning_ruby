@@ -1,6 +1,8 @@
 learning_ruby
 =============
 
+https://www.youtube.com/watch?v=DoT_ORFdj-k&list=PLYklth3QIgJYP-BQZZo5Dh0l6AL3Ea5ds&index=7&spfreload=1
+
 https://www.youtube.com/watch?v=Dji9ALCgfpM
 
 https://www.youtube.com/watch?v=lKmY_0uY86s
