@@ -1,0 +1,1 @@
+Ruby Learning here is somewhat concentrated on Meta-programming in Ruby.
